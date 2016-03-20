@@ -1,0 +1,44 @@
+/* Sizes */
+$max-width: '1680px';
+
+html,
+body,
+ul,
+ol,
+a,
+div,
+section,
+article {
+	margin: 0;
+	padding: 0;
+	img {
+		border: none;
+		display: block;
+	}
+}
+
+section {
+	width: 100%;
+	float: left;
+	clear: left;
+	h1 {
+		font-size: $h1-fsize;
+	}
+	h2 {
+		font-size: $h2-fsize;
+	}
+	h3 {
+		font-size: $h3-fsize;
+	}
+	article {
+		h1 {
+			font-size: $h1-article-fsize;
+		}
+	}
+}
+
+.wrapper {
+	max-width: $max-width;
+	margin: 0 auto;
+	width: 96%;
+} 

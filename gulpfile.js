@@ -1,6 +1,6 @@
 var gulp = require("gulp");
 var sass = require("gulp-sass");
-var autoprefix = require("gulp-autoprefixer");
+var autoprefixer = require("gulp-autoprefixer");
 var plumber = require("gulp-plumber");
 var beep = require('beepbeep');
 var colors = require('colors');
@@ -21,14 +21,13 @@ var onError = function(err) {
 
 // Task to convert scss files from src/scss dir to dist/css dir
 gulp.task("sass", function() {
-	return gulp.src("src/scss/*.scss")
-		.pipe(plumber({
-			errorHandler: onError
-		}))
-		.pipe(sass())
-		.pipe(autoprefix({browsers: ["last 2 versions", ">1%"] }))
+	return gulp.src("src/scss/main.scss")
+    .pipe(plumber({
+      errorHandler: onError
+    }))
+    .pipe(sass({includePaths: ['src/scss/partials']}))
+		.pipe(autoprefixer({browsers: ["last 2 versions", ">1%"] }))
 		.pipe(gulp.dest("dist/css"));
-
 });
 
 // Task to copy html from src dir to dist dir
@@ -60,7 +59,7 @@ gulp.task('default', ["sass", "html"], function() {
         baseDir: "dist"
     }
   });
-  gulp.watch("src/scss/*.scss", ["sass"]);
+  gulp.watch("src/scss/*", ["sass"]);
   gulp.watch("src/*.html", ["html"]);
   gulp.watch("src/img/*", ["imageMin"]);
   gulp.watch("dist/*.html").on("change", browserSync.reload);

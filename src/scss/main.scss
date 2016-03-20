@@ -1,0 +1,23 @@
+@import 'partials/colors';
+@import 'partials/fonts';
+@import 'partials/layout';
+
+.main-menu ul {
+	display: none;
+}
+
+.about-me {
+	background-color: $red-color;
+}
+
+.services {
+	background-color: $blue-color;
+	article {
+		width: 24%;
+		float: left;
+		margin-right: 1%;
+		text-align: center;
+	}
+}
+
+

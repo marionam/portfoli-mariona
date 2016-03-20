@@ -1,0 +1,54 @@
+/* Fonts */
+/* Sizes */
+html,
+body,
+ul,
+ol,
+a,
+div,
+section,
+article {
+  margin: 0;
+  padding: 0; }
+  html img,
+  body img,
+  ul img,
+  ol img,
+  a img,
+  div img,
+  section img,
+  article img {
+    border: none;
+    display: block; }
+
+section {
+  width: 100%;
+  float: left;
+  clear: left; }
+  section h1 {
+    font-size: "40px"; }
+  section h2 {
+    font-size: "30px"; }
+  section h3 {
+    font-size: "24px"; }
+  section article h1 {
+    font-size: "30px"; }
+
+.wrapper {
+  max-width: "1680px";
+  margin: 0 auto;
+  width: 96%; }
+
+.main-menu ul {
+  display: none; }
+
+.about-me {
+  background-color: red; }
+
+.services {
+  background-color: blue; }
+  .services article {
+    width: 24%;
+    float: left;
+    margin-right: 1%;
+    text-align: center; }
