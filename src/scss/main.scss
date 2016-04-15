@@ -6,12 +6,17 @@
 	display: none;
 }
 
-.about-me {
+.intro {
+
 	background-color: $red-color;
 }
 
+.about-me {
+	background-color: $yellow-color;
+}
+
 .services {
-	background-color: $blue-color;
+	background-color: $pink-color;
 	article {
 		width: 24%;
 		float: left;
@@ -20,4 +25,13 @@
 	}
 }
 
+.projects {
+
+	background-color: $dark-blue-color;
+}
+
+.contact {
+
+	background-color: $light-blue-color;
+}
 

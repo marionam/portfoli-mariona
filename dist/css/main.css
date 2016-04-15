@@ -42,13 +42,22 @@ section {
 .main-menu ul {
   display: none; }
 
+.intro {
+  background-color: #c13948; }
+
 .about-me {
-  background-color: red; }
+  background-color: #fceca9; }
 
 .services {
-  background-color: blue; }
+  background-color: #f9d1c9; }
   .services article {
     width: 24%;
     float: left;
     margin-right: 1%;
     text-align: center; }
+
+.projects {
+  background-color: #6fbcbe; }
+
+.contact {
+  background-color: #add9d9; }
