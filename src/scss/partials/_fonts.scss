@@ -1,5 +1,12 @@
 /* Fonts */
+
 $h1-fsize: '40px';
 $h2-fsize: '30px';
 $h3-fsize: '24px';
 $h1-article-fsize: '30px';
+
+@font-face {
+
+	font-family: "FontTitles";
+	src: url("../fonts/AvenirNextLTPro-Bold.woff");
+}

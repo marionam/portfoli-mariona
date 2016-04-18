@@ -7,8 +7,46 @@
 }
 
 .intro {
-
+	height: 667px;
 	background-color: $red-color;
+	position: relative;
+
+	h1{
+
+		width: 500px;
+		margin: 30px auto 0;
+		padding-bottom: 30px;
+		line-height: 1.4em;
+		font-size: 8em;
+		border-bottom: dotted 2px #fceca9;
+		font-family: "FontTitles";
+		text-align: center;
+		color: $yellow-color;
+		z-index: 1;
+	}
+
+	h2 {
+
+		width: 600px;
+		margin: 30px auto 0;
+		line-height: 1.2em;
+		font-size: 7em;
+		font-family: "FontTitles";
+		text-align: center;
+		color: $yellow-color;
+		z-index: 1;
+	}
+
+	h3 {
+		width: 100px;
+		font-size: 2em;
+		color: $yellow-color;
+		z-index: 1;
+		text-align: center;
+		margin: 30px auto 0;
+		font-family: 'Josefin Sans', sans-serif;
+		font-weight: 300;
+	}
 }
 
 .about-me {
@@ -31,7 +69,5 @@
 }
 
 .contact {
-
 	background-color: $light-blue-color;
 }
-

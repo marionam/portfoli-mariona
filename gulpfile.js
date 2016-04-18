@@ -41,7 +41,7 @@ gulp.task("html", function(){
 //Tast to compress images
 gulp.task('imageMin', function(){
   return gulp.src('src/img/*')
-    .pipe(imagemin({
+    .pipe(imageMin({
       progressive: true,
       optmizationLevel: 3, 
       interlaced: true
