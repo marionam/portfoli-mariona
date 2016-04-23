@@ -6,10 +6,33 @@
 	display: none;
 }
 
-.intro {
-	height: 667px;
-	background-color: $red-color;
+section {
+	min-height: 580px;
 	position: relative;
+}
+
+h1{
+	font-size: $h1-article-fsize;
+	font-family: "FontTitles";
+	margin: 30px 350px 0;
+	padding-bottom: 30px;
+	text-align: left;
+	z-index: 1;
+
+}
+
+p {
+	font-size: $p-fsize;
+	line-height: 1.4em;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
+}
+
+
+.intro {
+
+	background-color: $red-color;
+	
 
 	h1{
 
@@ -19,7 +42,6 @@
 		line-height: 1.4em;
 		font-size: 8em;
 		border-bottom: dotted 2px #fceca9;
-		font-family: "FontTitles";
 		text-align: center;
 		color: $yellow-color;
 		z-index: 1;
@@ -51,23 +73,121 @@
 
 .about-me {
 	background-color: $yellow-color;
+	height: 800px;
+
+	h1{
+
+		width: 500px;
+		color: $red-color;
+	
+	}
+
+	p {
+
+		width: 650px;
+		color: $red-color;
+		z-index: 1;
+		text-align: justify;
+		margin: 0px 350px 0;	
+	}
+
+	button {
+		font-family: 'FontTitles';
+		font-size: $h3-fsize;
+		color: $red-color;
+		width: 293.8px;
+	  height: 55.1px;
+	  border-radius: 100px;
+	  background-color: $yellow-color;
+	  border: solid 2px $red-color;
+	  position: absolute;
+	  right: 40%;
+	  bottom: 15%;
+	}
+
+	button:hover {
+		 background-color: $red-color;
+		 color: $yellow-color;
+		 cursor: pointer;
+
+	}
+	
 }
 
 .services {
+	z-index: 1;
 	background-color: $pink-color;
+	.clouds {
+		position: absolute;
+		width: 100%;
+		min-height: 580px;
+		top: 0;
+		left: 0;
+	}
+	.wrapper {
+		min-height: 580px;
+		color: $dark-pink-color;
+	}
 	article {
-		width: 24%;
+		width: 22%;
 		float: left;
-		margin-right: 1%;
+		margin-right: 3%;
 		text-align: center;
+		vertical-align: center;
+		margin-top: 2%;
+
+
+		img {
+			margin-left: 25%;
+		}
+	}
+
+	
+		h1{
+			text-align: center;
+		}
+
+	h2{
+
+		font-family: 'Josefin Sans', sans-serif;
+
+	}
+
+}
+
+.sea {
+	background-color: $light-blue-color;
+	min-height: 400px;
+	position: relative;
+	img {
+		position: absolute;
+	}
+	.faro {
+		top: -30%;
+		left: 22%;
+	}
+	.llaut {
+		right: 10%;
+		top: 30%;
+	}
+	.roca-delante {
+		right: 0;
+		bottom: -5%
+
+	}
+	.roca-fondo {
+		top: -6%;
+		left: 0;
 	}
 }
 
 .projects {
-
+	z-index: 0;
 	background-color: $dark-blue-color;
 }
 
 .contact {
 	background-color: $light-blue-color;
 }
+
+

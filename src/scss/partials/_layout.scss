@@ -46,6 +46,9 @@ section {
 	max-width: $max-width;
 	margin: 0 auto;
 	width: 96%;
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
 	
 } 
 
@@ -54,7 +57,7 @@ nav {
 	position: fixed;
 	top: 30px;
 	right: 30px;
-	z-index: 1;
+	z-index: 3;
 }
 
 .avatar{
@@ -116,4 +119,82 @@ nav {
 
 	bottom: 5%;
 	right: 5%;
+}
+
+.cloud1-b {
+	top: 1%;
+	left: 55%;
+}
+
+.cloud2-b {
+
+	top: 15%;
+	left: 4%;
+}
+
+.cloud3-b {
+
+	top: 30%;
+	right: 0%;
+}
+
+
+.cloud4-b {
+
+	top: 47%;
+	left: 15%;
+}
+
+.cloud5-b {
+
+	top: 55%;
+	right: 12%;
+}
+
+
+.molino {
+
+	position: absolute;
+	z-index: 0;
+	bottom: 1%;
+	left: 0%;
+}
+
+.cow {
+
+	position: absolute;
+	z-index: 0;
+	bottom: 1%;
+	right: 0;
+
+}
+
+.cloud1-c {
+	top: 3%;
+	left: 15%;
+}
+
+.cloud2-c {
+
+	top: 9%;
+	right: 20%;
+}
+
+.cloud3-c {
+
+	top: 35%;
+	left: 0%;
+}
+
+
+.cloud4-c {
+
+	top: 69%;
+	right: 0%;
+}
+
+.cloud5-c {
+
+	bottom: 18%;
+	right: 44%;
 }

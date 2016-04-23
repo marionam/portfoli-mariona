@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="252px" height="105px" viewBox="0 0 252 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4 (15575) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M0,0.21765625 L289.636713,0.21765625 L289.636713,70 L0,70"></path>
+        <path id="path-3" d="M0,35.2176562 L289.636713,35.2176562 L289.636713,105 L0,105"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD-Copy" sketch:type="MSArtboardGroup" transform="translate(-1188.000000, -2901.000000)">
+            <g id="Page-1" sketch:type="MSLayerGroup" transform="translate(1188.000000, 2901.000000)">
+                <g transform="translate(72.380665, 0.000000)">
+                    <mask id="mask-2" sketch:name="Clip 2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M289.636165,35.1089375 C289.636165,54.378625 273.973427,69.9995625 254.652177,69.9995625 L34.9845363,69.9995625 C15.6632855,69.9995625 -0.000548338368,54.378625 -0.000548338368,35.1089375 C-0.000548338368,15.83925 15.6632855,0.2183125 34.9845363,0.2183125 L254.652177,0.2183125 C273.973427,0.2183125 289.636165,15.83925 289.636165,35.1089375" id="Fill-1" fill="#4C3F32" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                </g>
+                <mask id="mask-4" sketch:name="Clip 2" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M289.636165,70.1089375 C289.636165,89.378625 273.973427,104.999563 254.652177,104.999563 L34.9845363,104.999563 C15.6632855,104.999563 -0.000548338368,89.378625 -0.000548338368,70.1089375 C-0.000548338368,50.83925 15.6632855,35.2183125 34.9845363,35.2183125 L254.652177,35.2183125 C273.973427,35.2183125 289.636165,50.83925 289.636165,70.1089375" id="Fill-1" fill="#786956" sketch:type="MSShapeGroup" mask="url(#mask-4)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
