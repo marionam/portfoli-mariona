@@ -47,16 +47,20 @@ section {
 	}
 }
 
+.intro-wrapper,
 .wrapper {
 
-	max-width: $max-width;
-	margin: 0 auto;
-	width: 96%;
-	overflow: hidden;
-	position: relative;
-	z-index: 2;
-	
-} 
+max-width: $max-width;
+margin: 0 auto;
+width: 96%;
+overflow: hidden;
+position: relative;
+z-index: 2;
+}
+
+.intro-wrapper {
+   z-index: 3;
+}
 
 /****MENU NAVEGACION****/
 
@@ -76,6 +80,7 @@ nav.main-menu {
 		font-size: 1.6em;
 		border: none;
 		padding: 8px 20px;
+		cursor: pointer;
 	}
 
 	.intro-button {
@@ -323,19 +328,26 @@ nav.main-menu {
 
 .cloud3-d {
 
-	top: 42%;
+	top: 28%;
 	left: 0%;
 }
 
 
 .cloud4-d {
 
-	bottom: 20%;
+	bottom: 50%;
 	right: 2%;
 }
 
 .cloud5-d {
 
-	bottom: 0%;
-	right: 28%;
+	bottom: 46%;
+	left: 14%;
+}
+
+
+.cloud6-d {
+
+	bottom: 24%;
+	right: 17%;
 }

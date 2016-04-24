@@ -47,6 +47,7 @@ section {
   section article h1 {
     font-size: 36px; }
 
+.intro-wrapper,
 .wrapper {
   max-width: 1680px;
   margin: 0 auto;
@@ -54,6 +55,9 @@ section {
   overflow: hidden;
   position: relative;
   z-index: 2; }
+
+.intro-wrapper {
+  z-index: 3; }
 
 /****MENU NAVEGACION****/
 nav.main-menu {
@@ -67,7 +71,8 @@ nav.main-menu {
     font-family: "FontTitles";
     font-size: 1.6em;
     border: none;
-    padding: 8px 20px; }
+    padding: 8px 20px;
+    cursor: pointer; }
   nav.main-menu .intro-button {
     border: none;
     background-color: transparent;
@@ -233,16 +238,20 @@ nav.main-menu {
   right: 10%; }
 
 .cloud3-d {
-  top: 42%;
+  top: 28%;
   left: 0%; }
 
 .cloud4-d {
-  bottom: 20%;
+  bottom: 50%;
   right: 2%; }
 
 .cloud5-d {
-  bottom: 0%;
-  right: 28%; }
+  bottom: 46%;
+  left: 14%; }
+
+.cloud6-d {
+  bottom: 24%;
+  right: 17%; }
 
 /****DECLARACIONES GENERALES****/
 section {
@@ -414,6 +423,7 @@ p {
         border: solid 2px #f9d1c9;
         color: #f9d1c9;
         font-size: 1.9em;
+        font-weight: bold;
         text-decoration: none;
         margin: 0 auto; }
         .projects ul.menu-projects li a:hover {
@@ -462,7 +472,8 @@ p {
 
 /****CONTACTO****/
 .contact {
-  background-color: #add9d9; }
+  background-color: #add9d9;
+  /* do not group these rules */ }
   .contact .wrapper {
     min-height: 580px; }
   .contact h1 {
@@ -470,17 +481,33 @@ p {
     text-align: center;
     margin-top: 100px; }
   .contact form {
-    width: 470px;
+    width: 490px;
     margin: auto; }
   .contact input, .contact textarea {
     width: 470px;
-    height: 50px;
     border-radius: 8px;
     background-color: #6fbcbe;
     border: none;
     color: #fceca9;
     font-size: 1.9em;
-    margin-top: 40px; }
+    margin-top: 40px;
+    font-family: 'Josefin Sans','Sans serif';
+    padding: 15px 10px; }
+  .contact input:focus,
+  .contact textarea:focus {
+    outline: none;
+    box-shadow: 0 0 6px 1px #fceca9; }
+  .contact *::-webkit-input-placeholder {
+    color: #fceca9; }
+  .contact *:-moz-placeholder {
+    /* FF 4-18 */
+    color: #fceca9; }
+  .contact *::-moz-placeholder {
+    /* FF 19+ */
+    color: #fceca9; }
+  .contact *:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #fceca9; }
   .contact button {
     width: 131px;
     height: 50px;
@@ -488,9 +515,15 @@ p {
     background-color: #fceca9;
     border: none;
     color: #6fbcbe;
-    font-size: 1.9em;
-    font-weight: 600;
-    margin-top: 50px; }
+    font-size: 2.2em;
+    font-weight: bold;
+    margin: 50px auto 0;
+    display: block;
+    font-family: 'Josefin Sans','Sans serif'; }
+    .contact button:hover {
+      background-color: #6fbcbe;
+      color: #fceca9;
+      cursor: pointer; }
   .contact .final {
     position: relative; }
     .contact .final .prova {
