@@ -1,9 +1,11 @@
+@charset "UTF-8";
 /* Fonts */
 @font-face {
   font-family: "FontTitles";
   src: url("../fonts/AvenirNextLTPro-Bold.woff"); }
 
 /* Sizes */
+/****AJUSTES GENERALES****/
 body {
   font-size: 62.5%; }
 
@@ -49,12 +51,14 @@ section {
   position: relative;
   z-index: 2; }
 
+/****MENU NAVEGACION****/
 nav {
   position: fixed;
   top: 30px;
   right: 30px;
   z-index: 3; }
 
+/****PORTADA****/
 .avatar {
   position: absolute;
   z-index: 2;
@@ -97,6 +101,7 @@ nav {
   bottom: 5%;
   right: 5%; }
 
+/****SOBRE MI - ILUSTRACIONES****/
 .cloud1-b {
   top: 1%;
   left: 55%; }
@@ -129,26 +134,69 @@ nav {
   bottom: 1%;
   right: 0; }
 
+/****SERVICIOS ILUSTRACIONES****/
 .cloud1-c {
   top: 3%;
   left: 15%; }
 
 .cloud2-c {
-  top: 9%;
+  top: 10%;
   right: 20%; }
 
 .cloud3-c {
-  top: 35%;
+  top: 42%;
   left: 0%; }
 
 .cloud4-c {
-  top: 69%;
+  bottom: 12%;
   right: 0%; }
 
 .cloud5-c {
-  bottom: 18%;
+  bottom: 4%;
   right: 44%; }
 
+/****PROJECTOS ILUSTRACIONES****/
+.jellyfish {
+  width: 100%;
+  top: 0;
+  left: 0; }
+  .jellyfish img {
+    position: absolute;
+    z-index: 0; }
+
+.jelly1 {
+  top: 4%;
+  left: 1%; }
+
+.jelly2 {
+  top: 10%;
+  right: 0%; }
+
+.jelly3 {
+  top: 60%;
+  left: 27%; }
+
+.jelly4 {
+  top: 10%;
+  left: 15%; }
+
+.jelly5 {
+  top: 10%;
+  left: 15%; }
+
+.jelly6 {
+  top: 10%;
+  left: 15%; }
+
+.jelly7 {
+  top: 10%;
+  left: 15%; }
+
+.jelly8 {
+  top: 10%;
+  left: 15%; }
+
+/****DECLARACIONES GENERALES****/
 .main-menu ul {
   display: none; }
 
@@ -170,8 +218,13 @@ p {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300; }
 
+/****INTRODUCCIÓN****/
 .intro {
-  background-color: #c13948; }
+  background-color: #c13948;
+  height: 100vh; }
+  .intro .text-intro {
+    height: 80vh;
+    margin-top: 15vh; }
   .intro h1 {
     width: 500px;
     margin: 30px auto 0;
@@ -201,6 +254,7 @@ p {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300; }
 
+/****SOBRE MI****/
 .about-me {
   background-color: #fceca9;
   height: 800px; }
@@ -230,6 +284,7 @@ p {
     color: #fceca9;
     cursor: pointer; }
 
+/****SERVICIOS****/
 .services {
   z-index: 1;
   background-color: #f9d1c9; }
@@ -254,7 +309,7 @@ p {
   .services h1 {
     text-align: center; }
   .services h2 {
-    font-family: 'Josefin Sans', sans-serif; }
+    font-family: 'FontTitles', sans-serif; }
 
 .sea {
   background-color: #add9d9;
@@ -266,18 +321,66 @@ p {
     top: -30%;
     left: 22%; }
   .sea .llaut {
-    right: 10%;
-    top: 30%; }
+    right: 14%;
+    top: 27%; }
   .sea .roca-delante {
     right: 0;
-    bottom: -5%; }
+    bottom: -8%; }
   .sea .roca-fondo {
-    top: -6%;
+    top: -9%;
     left: 0; }
 
+/****GALERIA PROYECTOS****/
 .projects {
   z-index: 0;
   background-color: #6fbcbe; }
+  .projects .jellyfish {
+    position: absolute;
+    width: 100%;
+    min-height: 580px;
+    top: 0;
+    left: 0; }
+  .projects .wrapper {
+    min-height: 580px; }
+  .projects h1 {
+    text-align: center;
+    color: #f9d1c9; }
+  .projects ul.menu-projects {
+    max-width: 1550px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+  .projects ul.menu-projects li {
+    width: 100%;
+    max-width: 100px;
+    margin-right: 80px;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 100px;
+    background-color: #6fbcbe;
+    border: solid 2px #f9d1c9;
+    color: #f9d1c9;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.9em;
+    text-decoration: none; }
+  .projects .projects-list ul {
+    max-width: 100%; }
+  .projects .projects-list li {
+    max-width: 350px;
+    max-height: 254px;
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+    margin-right: 50px; }
+  .projects .projects-list ul li a {
+    width: 100%;
+    display: block;
+    border: 4px solid #add9d9;
+    border-radius: 8px;
+    width: 340px;
+    height: 244px; }
 
+/****CONTACTO****/
 .contact {
   background-color: #add9d9; }
