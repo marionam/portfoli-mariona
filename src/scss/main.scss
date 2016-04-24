@@ -39,10 +39,10 @@ p {
 	 height: 100vh;
 
 	 .text-intro {
-       height: 80vh;
-       margin-top: 15vh;
+       height: 100vh;
+       margin-top: 8vh;
    	}
-	
+
 	h1{
 
 		width: 500px;
@@ -54,6 +54,7 @@ p {
 		text-align: center;
 		color: $yellow-color;
 		z-index: 1;
+
 	}
 
 	h2 {
@@ -61,7 +62,7 @@ p {
 		width: 600px;
 		margin: 30px auto 0;
 		line-height: 1.2em;
-		font-size: 7em;
+		font-size: 6em;
 		font-family: "FontTitles";
 		text-align: center;
 		color: $yellow-color;
@@ -74,7 +75,7 @@ p {
 		color: $yellow-color;
 		z-index: 1;
 		text-align: center;
-		margin: 30px auto 0;
+		margin: 20px auto 0;
 		font-family: 'Josefin Sans', sans-serif;
 		font-weight: 300;
 	}
@@ -88,18 +89,22 @@ p {
 
 	h1{
 
-		width: 500px;
+		max-width: 650px;
+       width: 100%;
+       margin: 100px auto 0;
 		color: $red-color;
+       text-align: left;
 	
 	}
 
 	p {
-
-		width: 650px;
+		max-width: 650px;
+       width: 100%;
 		color: $red-color;
 		z-index: 1;
 		text-align: justify;
-		margin: 0px 350px 0;	
+		margin: 0 auto;
+       display: block;
 	}
 
 	button {
@@ -127,16 +132,17 @@ p {
 
 /****SERVICIOS****/
 
+
+
 .services {
 	z-index: 1;
 	background-color: $pink-color;
+
 	.clouds {
 		position: absolute;
-		width: 100%;
 		min-height: 580px;
-		top: 0;
-		left: 0;
 	}
+	
 	.wrapper {
 		min-height: 580px;
 		color: $dark-pink-color;
@@ -158,6 +164,7 @@ p {
 	
 		h1{
 			text-align: center;
+			margin-top: 100px;
 		}
 
 	h2{
@@ -210,19 +217,21 @@ p {
 
 	.wrapper {
 		min-height: 580px;
+
 		
 	}
 
 	h1{
 		text-align: center;
 		color: $pink-color;
+		margin-top: 100px;
 	}
 
 	ul.menu-projects {
 
 		max-width: 1550px;
 		width: 100%;
-		margin: 0 auto;
+		margin: 20px 35px;
 		text-align: center;
 	}
 
@@ -244,8 +253,17 @@ p {
 
 	}
 
+	.projects-list {
+		padding-bottom: 100px;
+		width: 100%;
+		overflow: hidden;
+	}
+
 	.projects-list ul {
 		max-width: 100%;
+		width: 100%;
+		margin: -10px 65px;
+		
 	}
 
 	.projects-list li {
@@ -255,7 +273,8 @@ p {
 		height: 100%;
 		display: inline-block;
 		float: left;
-		margin-right: 50px;
+		margin-right: 52px;
+		margin-top: 52px;
 
 	}
 
@@ -276,6 +295,43 @@ p {
 
 .contact {
 	background-color: $light-blue-color;
+
+	h1 {
+		color: $yellow-color;
+		text-align: center;
+	}
+
+	form {
+		width: 470px;
+		margin: auto;
+		
+  		
+	}
+
+	input, textarea {
+		width: 470px;
+ 		height: 50px;
+  		border-radius: 8px;
+  		background-color: #6fbcbe;
+  		border: none;
+  		font-family: 'Josefin Sans', sans-serif;
+  		color: $yellow-color;
+  		font-size: $p-fsize;
+  		margin-top: 40px;
+	}
+
+	button {
+		width: 131px;
+  		height: 50px;
+  		border-radius: 95px;
+  		background-color: #fceca9;
+  		border: none;
+  		font-family: 'Josefin Sans', sans-serif;
+  		color: $dark-blue-color;
+  		font-size: $p-fsize;
+  		font-weight: 600;
+  		margin-top: 50px;
+	}
 }
 
 

@@ -29,12 +29,15 @@ section {
 	clear: left;
 	h1 {
 		font-size: $h1-fsize;
+		font-weight: 400;
 	}
 	h2 {
 		font-size: $h2-fsize;
+		font-weight: 400;
 	}
 	h3 {
 		font-size: $h3-fsize;
+		font-weight: 400;
 	}
 	article {
 		h1 {
@@ -228,37 +231,59 @@ nav {
 }
 
 .jelly2 {
-	top: 10%;
+	top: 52%;
 	right: 0%;
 }
 
 .jelly3 {
 
-	top: 60%;
-	left: 27%;
+	top: 99%;
+	left: 33%;
 }
 
 .jelly4 {
-	top: 10%;
-	left: 15%;
+	top: 120%;
+	left: 0%;
 }
 
 .jelly5 {
-	top: 10%;
-	left: 15%;
+	bottom: -75%;
+	right: 2%;
 }
 
 .jelly6 {
-	top: 10%;
+	top: -114%;
+	left: 34%;
+}
+
+/****CONTACTO****/
+
+.cloud1-c {
+	top: 3%;
 	left: 15%;
 }
 
-.jelly7 {
+.cloud2-c {
+
 	top: 10%;
-	left: 15%;
+	right: 20%;
 }
 
-.jelly8 {
-	top: 10%;
-	left: 15%;
+.cloud3-c {
+
+	top: 42%;
+	left: 0%;
+}
+
+
+.cloud4-c {
+
+	bottom: 12%;
+	right: 0%;
+}
+
+.cloud5-c {
+
+	bottom: 4%;
+	right: 44%;
 }

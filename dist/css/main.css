@@ -35,11 +35,14 @@ section {
   float: left;
   clear: left; }
   section h1 {
-    font-size: 40px; }
+    font-size: 40px;
+    font-weight: 400; }
   section h2 {
-    font-size: 30px; }
+    font-size: 30px;
+    font-weight: 400; }
   section h3 {
-    font-size: 24px; }
+    font-size: 24px;
+    font-weight: 400; }
   section article h1 {
     font-size: 36px; }
 
@@ -169,32 +172,24 @@ nav {
   left: 1%; }
 
 .jelly2 {
-  top: 10%;
+  top: 52%;
   right: 0%; }
 
 .jelly3 {
-  top: 60%;
-  left: 27%; }
+  top: 99%;
+  left: 33%; }
 
 .jelly4 {
-  top: 10%;
-  left: 15%; }
+  top: 120%;
+  left: 0%; }
 
 .jelly5 {
-  top: 10%;
-  left: 15%; }
+  bottom: -75%;
+  right: 2%; }
 
 .jelly6 {
-  top: 10%;
-  left: 15%; }
-
-.jelly7 {
-  top: 10%;
-  left: 15%; }
-
-.jelly8 {
-  top: 10%;
-  left: 15%; }
+  top: -114%;
+  left: 34%; }
 
 /****DECLARACIONES GENERALES****/
 .main-menu ul {
@@ -223,8 +218,8 @@ p {
   background-color: #c13948;
   height: 100vh; }
   .intro .text-intro {
-    height: 80vh;
-    margin-top: 15vh; }
+    height: 100vh;
+    margin-top: 8vh; }
   .intro h1 {
     width: 500px;
     margin: 30px auto 0;
@@ -239,7 +234,7 @@ p {
     width: 600px;
     margin: 30px auto 0;
     line-height: 1.2em;
-    font-size: 7em;
+    font-size: 6em;
     font-family: "FontTitles";
     text-align: center;
     color: #fceca9;
@@ -250,7 +245,7 @@ p {
     color: #fceca9;
     z-index: 1;
     text-align: center;
-    margin: 30px auto 0;
+    margin: 20px auto 0;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300; }
 
@@ -259,14 +254,19 @@ p {
   background-color: #fceca9;
   height: 800px; }
   .about-me h1 {
-    width: 500px;
-    color: #c13948; }
+    max-width: 650px;
+    width: 100%;
+    margin: 100px auto 0;
+    color: #c13948;
+    text-align: left; }
   .about-me p {
-    width: 650px;
+    max-width: 650px;
+    width: 100%;
     color: #c13948;
     z-index: 1;
     text-align: justify;
-    margin: 0px 350px 0; }
+    margin: 0 auto;
+    display: block; }
   .about-me button {
     font-family: 'FontTitles';
     font-size: 24px;
@@ -290,10 +290,7 @@ p {
   background-color: #f9d1c9; }
   .services .clouds {
     position: absolute;
-    width: 100%;
-    min-height: 580px;
-    top: 0;
-    left: 0; }
+    min-height: 580px; }
   .services .wrapper {
     min-height: 580px;
     color: #ea5c67; }
@@ -307,7 +304,8 @@ p {
     .services article img {
       margin-left: 25%; }
   .services h1 {
-    text-align: center; }
+    text-align: center;
+    margin-top: 100px; }
   .services h2 {
     font-family: 'FontTitles', sans-serif; }
 
@@ -344,11 +342,12 @@ p {
     min-height: 580px; }
   .projects h1 {
     text-align: center;
-    color: #f9d1c9; }
+    color: #f9d1c9;
+    margin-top: 100px; }
   .projects ul.menu-projects {
     max-width: 1550px;
     width: 100%;
-    margin: 0 auto;
+    margin: 20px 35px;
     text-align: center; }
   .projects ul.menu-projects li {
     width: 100%;
@@ -363,8 +362,14 @@ p {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.9em;
     text-decoration: none; }
+  .projects .projects-list {
+    padding-bottom: 100px;
+    width: 100%;
+    overflow: hidden; }
   .projects .projects-list ul {
-    max-width: 100%; }
+    max-width: 100%;
+    width: 100%;
+    margin: -10px 65px; }
   .projects .projects-list li {
     max-width: 350px;
     max-height: 254px;
@@ -372,7 +377,8 @@ p {
     height: 100%;
     display: inline-block;
     float: left;
-    margin-right: 50px; }
+    margin-right: 52px;
+    margin-top: 52px; }
   .projects .projects-list ul li a {
     width: 100%;
     display: block;
@@ -384,3 +390,30 @@ p {
 /****CONTACTO****/
 .contact {
   background-color: #add9d9; }
+  .contact h1 {
+    color: #fceca9;
+    text-align: center; }
+  .contact form {
+    width: 470px;
+    margin: auto; }
+  .contact input, .contact textarea {
+    width: 470px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #6fbcbe;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fceca9;
+    font-size: 1.9em;
+    margin-top: 40px; }
+  .contact button {
+    width: 131px;
+    height: 50px;
+    border-radius: 95px;
+    background-color: #fceca9;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #6fbcbe;
+    font-size: 1.9em;
+    font-weight: 600;
+    margin-top: 50px; }

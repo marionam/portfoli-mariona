@@ -36,14 +36,18 @@ gulp.task("html", function(){
 	.pipe(gulp.dest("dist"));
 });
 
-
+// Task to js scripts from src to dist
+gulp.task("js", function(){
+	return gulp.src("src/js/*.js")
+	.pipe(gulp.dest("dist/js"));
+});
 
 //Tast to compress images
 gulp.task('imageMin', function(){
   return gulp.src('src/img/*')
     .pipe(imageMin({
       progressive: true,
-      optmizationLevel: 3, 
+      optmizationLevel: 3,
       interlaced: true
       //svgoPlugins: [{removeViewBox: false}],
       //use: [pngquant()]
@@ -53,7 +57,7 @@ gulp.task('imageMin', function(){
 
 
 // Watch
-gulp.task('default', ["sass", "html"], function() {
+gulp.task('default', ["sass", "html", "js"], function() {
   browserSync.init({
     server: {
         baseDir: "dist"
@@ -61,6 +65,7 @@ gulp.task('default', ["sass", "html"], function() {
   });
   gulp.watch("src/scss/*", ["sass"]);
   gulp.watch("src/*.html", ["html"]);
+  gulp.watch("src/js/*.js", ["js"]);
   gulp.watch("src/img/*", ["imageMin"]);
   gulp.watch("dist/*.html").on("change", browserSync.reload);
 });
