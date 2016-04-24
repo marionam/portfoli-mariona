@@ -4,10 +4,6 @@
 
 /****DECLARACIONES GENERALES****/
 
-.main-menu ul {
-	display: none;
-}
-
 section {
 	min-height: 580px;
 	position: relative;
@@ -26,7 +22,6 @@ h1{
 p {
 	font-size: $p-fsize;
 	line-height: 1.4em;
-	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 300;
 }
 
@@ -76,7 +71,6 @@ p {
 		z-index: 1;
 		text-align: center;
 		margin: 20px auto 0;
-		font-family: 'Josefin Sans', sans-serif;
 		font-weight: 300;
 	}
 }
@@ -94,7 +88,7 @@ p {
        margin: 100px auto 0;
 		color: $red-color;
        text-align: left;
-	
+
 	}
 
 	p {
@@ -112,22 +106,21 @@ p {
 		font-size: $h3-fsize;
 		color: $red-color;
 		width: 293.8px;
-	  height: 55.1px;
-	  border-radius: 100px;
-	  background-color: $yellow-color;
-	  border: solid 2px $red-color;
-	  position: absolute;
-	  right: 40%;
-	  bottom: 15%;
+        height: 55.1px;
+        border-radius: 100px;
+        background-color: $yellow-color;
+        border: solid 2px $red-color;
+        position: absolute;
+        right: 40%;
+        bottom: 15%;
+
+        &:hover {
+          background-color: $red-color;
+         color: $yellow-color;
+         cursor: pointer;
+        }
 	}
 
-	button:hover {
-		 background-color: $red-color;
-		 color: $yellow-color;
-		 cursor: pointer;
-
-	}
-	
 }
 
 /****SERVICIOS****/
@@ -142,7 +135,7 @@ p {
 		position: absolute;
 		min-height: 580px;
 	}
-	
+
 	.wrapper {
 		min-height: 580px;
 		color: $dark-pink-color;
@@ -161,7 +154,7 @@ p {
 		}
 	}
 
-	
+
 		h1{
 			text-align: center;
 			margin-top: 100px;
@@ -218,7 +211,7 @@ p {
 	.wrapper {
 		min-height: 580px;
 
-		
+
 	}
 
 	h1{
@@ -229,65 +222,80 @@ p {
 
 	ul.menu-projects {
 
-		max-width: 1550px;
+		max-width: 1240px;
 		width: 100%;
-		margin: 20px 35px;
-		text-align: center;
-	}
+		margin: 20px auto;
+		padding: 0;
+        overflow: hidden;
 
+        li {
+            width: 16.5%;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            float: left;
+            text-align: center;
 
+            a {
+                border-radius: 100px;
+                padding: 10px 0;
+                width: 155px;
+                display: block;
+                background-color: $dark-blue-color;
+                border: solid 2px $pink-color;
+                color: $pink-color;
+                font-size: $p-fsize;
+                text-decoration: none;
+                margin: 0 auto;
 
-	ul.menu-projects li {
-		width: 100%;
-		max-width: 100px;
-		margin-right: 80px;
-		padding: 10px;
-		display: inline-block;
-  		border-radius: 100px;
- 		background-color: $dark-blue-color;
-  		border: solid 2px $pink-color;
-  		color: $pink-color;
-  		font-family: 'Josefin Sans', sans-serif;
-  		font-size: $p-fsize;
-  		text-decoration: none;
-
+                &:hover {
+                    background-color: #f9d1c9;
+                    color: #6fbcbe;
+                }
+            }
+        }
 	}
 
 	.projects-list {
 		padding-bottom: 100px;
-		width: 100%;
+		max-width: 1200px;
+        width: 100%;
 		overflow: hidden;
-	}
+        margin: 40px auto;
 
-	.projects-list ul {
-		max-width: 100%;
-		width: 100%;
-		margin: -10px 65px;
-		
-	}
+        ul {
+            width: 100%;
 
-	.projects-list li {
-		max-width: 350px;
-		max-height: 254px;
-		width: 30%;
-		height: 100%;
-		display: inline-block;
-		float: left;
-		margin-right: 52px;
-		margin-top: 52px;
+            li {
+                width: 33%;
+                display: block;
+                float: left;
+                margin-bottom: 50px;
 
-	}
+                @each $num in (2,5,8,11,14,17,20,23) {
+                    &:nth-child(#{$num}) a {
+                        margin: 0 auto;
+                    }
+                }
 
-	.projects-list ul li a {
-		width: 100%;
-		display: block;
-		border: 4px solid $light-blue-color;
-		-webkit-border-radius: 8px;
-		-moz-border-radius: 8px;
-		border-radius: 8px;
-		width: 340px;
-		height: 244px;
+                &:nth-child(3n) a {
+                    float: right;
+                }
 
+                a {
+                    width: 100%;
+                    display: block;
+                    border: 6px solid $light-blue-color;
+                    -webkit-border-radius: 8px;
+                    -moz-border-radius: 8px;
+                    border-radius: 8px;
+                    min-width: 300px;
+                    min-height: 215px;
+                    max-width: 350px;
+                    max-height: 251px;
+                }
+            }
+        }
 	}
 }
 
@@ -296,16 +304,21 @@ p {
 .contact {
 	background-color: $light-blue-color;
 
+    .wrapper {
+        min-height: 580px;
+    }
+
 	h1 {
 		color: $yellow-color;
 		text-align: center;
+        margin-top: 100px;
 	}
 
 	form {
 		width: 470px;
 		margin: auto;
-		
-  		
+
+
 	}
 
 	input, textarea {
@@ -314,7 +327,6 @@ p {
   		border-radius: 8px;
   		background-color: #6fbcbe;
   		border: none;
-  		font-family: 'Josefin Sans', sans-serif;
   		color: $yellow-color;
   		font-size: $p-fsize;
   		margin-top: 40px;
@@ -326,12 +338,18 @@ p {
   		border-radius: 95px;
   		background-color: #fceca9;
   		border: none;
-  		font-family: 'Josefin Sans', sans-serif;
   		color: $dark-blue-color;
   		font-size: $p-fsize;
   		font-weight: 600;
   		margin-top: 50px;
 	}
+
+    .final {
+        position: relative;
+        .prova {
+            width: 100%;
+        }
+    }
 }
 
 
