@@ -10,8 +10,11 @@
 var defaultButtonClass;
 
 $(document).ready(function(){
-    resizeIntroSection();
-    initScrollMenuButton();
+   resizeIntroSection();
+   initScrollMenuButton();
+   $("nav.main-menu button").click(function(){
+       $(this).parent().find("ul").toggle();
+   });
 });
 
 window.onresize = function(e) {
