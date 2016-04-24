@@ -7,7 +7,8 @@
 /* Sizes */
 /****AJUSTES GENERALES****/
 body {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  font-family: 'Josefin Sans', sans-serif; }
 
 html,
 body,
@@ -55,11 +56,42 @@ section {
   z-index: 2; }
 
 /****MENU NAVEGACION****/
-nav {
+nav.main-menu {
   position: fixed;
   top: 30px;
   right: 30px;
   z-index: 3; }
+  nav.main-menu ul {
+    display: none; }
+  nav.main-menu button {
+    font-family: "FontTitles";
+    font-size: 1.6em;
+    border: none;
+    padding: 8px 20px; }
+  nav.main-menu .intro-button {
+    border: none;
+    background-color: transparent;
+    color: #fceca9; }
+  nav.main-menu .about-me-button {
+    border-radius: 100px;
+    background-color: #c13948;
+    color: #fceca9;
+    box-shadow: 0 0 6px 1px #b19c47; }
+  nav.main-menu .services-button {
+    border-radius: 100px;
+    background-color: #ea5c67;
+    color: #f9d1c9;
+    box-shadow: 0 0 6px 1px #d26169; }
+  nav.main-menu .projects-button {
+    border-radius: 100px;
+    background-color: #f9d1c9;
+    color: #6fbcbe;
+    box-shadow: 0 0 6px 1px #498a8b; }
+  nav.main-menu .contact-button {
+    border-radius: 100px;
+    background-color: #fceca9;
+    color: #6fbcbe;
+    box-shadow: 0 0 6px 1px #7aa5a5; }
 
 /****PORTADA****/
 .avatar {
@@ -191,10 +223,28 @@ nav {
   top: -114%;
   left: 34%; }
 
-/****DECLARACIONES GENERALES****/
-.main-menu ul {
-  display: none; }
+/****CONTACTO****/
+.cloud1-d {
+  top: 6%;
+  left: 6%; }
 
+.cloud2-d {
+  top: 6%;
+  right: 10%; }
+
+.cloud3-d {
+  top: 42%;
+  left: 0%; }
+
+.cloud4-d {
+  bottom: 20%;
+  right: 2%; }
+
+.cloud5-d {
+  bottom: 0%;
+  right: 28%; }
+
+/****DECLARACIONES GENERALES****/
 section {
   min-height: 580px;
   position: relative; }
@@ -210,7 +260,6 @@ h1 {
 p {
   font-size: 1.9em;
   line-height: 1.4em;
-  font-family: 'Josefin Sans', sans-serif;
   font-weight: 300; }
 
 /****INTRODUCCIÓN****/
@@ -246,7 +295,6 @@ p {
     z-index: 1;
     text-align: center;
     margin: 20px auto 0;
-    font-family: 'Josefin Sans', sans-serif;
     font-weight: 300; }
 
 /****SOBRE MI****/
@@ -279,10 +327,10 @@ p {
     position: absolute;
     right: 40%;
     bottom: 15%; }
-  .about-me button:hover {
-    background-color: #c13948;
-    color: #fceca9;
-    cursor: pointer; }
+    .about-me button:hover {
+      background-color: #c13948;
+      color: #fceca9;
+      cursor: pointer; }
 
 /****SERVICIOS****/
 .services {
@@ -345,54 +393,82 @@ p {
     color: #f9d1c9;
     margin-top: 100px; }
   .projects ul.menu-projects {
-    max-width: 1550px;
+    max-width: 1240px;
     width: 100%;
-    margin: 20px 35px;
-    text-align: center; }
-  .projects ul.menu-projects li {
-    width: 100%;
-    max-width: 100px;
-    margin-right: 80px;
-    padding: 10px;
-    display: inline-block;
-    border-radius: 100px;
-    background-color: #6fbcbe;
-    border: solid 2px #f9d1c9;
-    color: #f9d1c9;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.9em;
-    text-decoration: none; }
+    margin: 20px auto;
+    padding: 0;
+    overflow: hidden; }
+    .projects ul.menu-projects li {
+      width: 16.5%;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      float: left;
+      text-align: center; }
+      .projects ul.menu-projects li a {
+        border-radius: 100px;
+        padding: 10px 0;
+        width: 155px;
+        display: block;
+        background-color: #6fbcbe;
+        border: solid 2px #f9d1c9;
+        color: #f9d1c9;
+        font-size: 1.9em;
+        text-decoration: none;
+        margin: 0 auto; }
+        .projects ul.menu-projects li a:hover {
+          background-color: #f9d1c9;
+          color: #6fbcbe; }
   .projects .projects-list {
     padding-bottom: 100px;
+    max-width: 1200px;
     width: 100%;
-    overflow: hidden; }
-  .projects .projects-list ul {
-    max-width: 100%;
-    width: 100%;
-    margin: -10px 65px; }
-  .projects .projects-list li {
-    max-width: 350px;
-    max-height: 254px;
-    width: 30%;
-    height: 100%;
-    display: inline-block;
-    float: left;
-    margin-right: 52px;
-    margin-top: 52px; }
-  .projects .projects-list ul li a {
-    width: 100%;
-    display: block;
-    border: 4px solid #add9d9;
-    border-radius: 8px;
-    width: 340px;
-    height: 244px; }
+    overflow: hidden;
+    margin: 40px auto; }
+    .projects .projects-list ul {
+      width: 100%; }
+      .projects .projects-list ul li {
+        width: 33%;
+        display: block;
+        float: left;
+        margin-bottom: 50px; }
+        .projects .projects-list ul li:nth-child(2) a {
+          margin: 0 auto; }
+        .projects .projects-list ul li:nth-child(5) a {
+          margin: 0 auto; }
+        .projects .projects-list ul li:nth-child(8) a {
+          margin: 0 auto; }
+        .projects .projects-list ul li:nth-child(11) a {
+          margin: 0 auto; }
+        .projects .projects-list ul li:nth-child(14) a {
+          margin: 0 auto; }
+        .projects .projects-list ul li:nth-child(17) a {
+          margin: 0 auto; }
+        .projects .projects-list ul li:nth-child(20) a {
+          margin: 0 auto; }
+        .projects .projects-list ul li:nth-child(23) a {
+          margin: 0 auto; }
+        .projects .projects-list ul li:nth-child(3n) a {
+          float: right; }
+        .projects .projects-list ul li a {
+          width: 100%;
+          display: block;
+          border: 6px solid #add9d9;
+          border-radius: 8px;
+          min-width: 300px;
+          min-height: 215px;
+          max-width: 350px;
+          max-height: 251px; }
 
 /****CONTACTO****/
 .contact {
   background-color: #add9d9; }
+  .contact .wrapper {
+    min-height: 580px; }
   .contact h1 {
     color: #fceca9;
-    text-align: center; }
+    text-align: center;
+    margin-top: 100px; }
   .contact form {
     width: 470px;
     margin: auto; }
@@ -402,7 +478,6 @@ p {
     border-radius: 8px;
     background-color: #6fbcbe;
     border: none;
-    font-family: 'Josefin Sans', sans-serif;
     color: #fceca9;
     font-size: 1.9em;
     margin-top: 40px; }
@@ -412,8 +487,11 @@ p {
     border-radius: 95px;
     background-color: #fceca9;
     border: none;
-    font-family: 'Josefin Sans', sans-serif;
     color: #6fbcbe;
     font-size: 1.9em;
     font-weight: 600;
     margin-top: 50px; }
+  .contact .final {
+    position: relative; }
+    .contact .final .prova {
+      width: 100%; }

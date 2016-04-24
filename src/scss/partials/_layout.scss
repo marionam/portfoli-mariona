@@ -5,6 +5,7 @@ $max-width:1680px;
 
 body {
 	font-size: 62.5%;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 html,
@@ -59,12 +60,63 @@ section {
 
 /****MENU NAVEGACION****/
 
-nav {
+nav.main-menu {
 
 	position: fixed;
 	top: 30px;
 	right: 30px;
 	z-index: 3;
+
+	ul {
+		display: none;
+	}
+
+	button {
+		font-family: "FontTitles";
+		font-size: 1.6em;
+		border: none;
+		padding: 8px 20px;
+	}
+
+	.intro-button {
+		border: none;
+		background-color: transparent;
+		color: $yellow-color;	
+	}
+
+	.about-me-button {
+		border-radius: 100px;
+		background-color: $red-color;
+		color: $yellow-color;
+		box-shadow: 0 0 6px 1px #b19c47;
+		
+	}
+
+	.services-button {
+		border-radius: 100px;
+		background-color: $dark-pink-color;
+		color: $pink-color;
+		box-shadow: 0 0 6px 1px #d26169;
+		
+	}
+
+	.projects-button {
+		border-radius: 100px;
+		background-color: $pink-color;
+		color: $dark-blue-color;
+		box-shadow: 0 0 6px 1px #498a8b;
+		
+	}
+
+	.contact-button {
+		border-radius: 100px;
+		background-color: $yellow-color;
+		color: $dark-blue-color;
+		box-shadow: 0 0 6px 1px #7aa5a5;
+		
+	}
+
+
 }
 
 /****PORTADA****/
@@ -258,32 +310,32 @@ nav {
 
 /****CONTACTO****/
 
-.cloud1-c {
-	top: 3%;
-	left: 15%;
+.cloud1-d {
+	top: 6%;
+	left: 6%;
 }
 
-.cloud2-c {
+.cloud2-d {
 
-	top: 10%;
-	right: 20%;
+	top: 6%;
+	right: 10%;
 }
 
-.cloud3-c {
+.cloud3-d {
 
 	top: 42%;
 	left: 0%;
 }
 
 
-.cloud4-c {
+.cloud4-d {
 
-	bottom: 12%;
-	right: 0%;
+	bottom: 20%;
+	right: 2%;
 }
 
-.cloud5-c {
+.cloud5-d {
 
-	bottom: 4%;
-	right: 44%;
+	bottom: 0%;
+	right: 28%;
 }
