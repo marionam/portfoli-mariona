@@ -10,6 +10,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/mediaqueries.css">
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
 </head>
@@ -21,10 +22,10 @@
 	<div class="intro-wrapper wrapper">
 		<nav class="main-menu">
 			<button class="menu-button">MENÚ</button>
-			
+
 			<ul>
 				<li>Inicio</li>
-				<li>Sobre mi</li>
+				<li class="about">Sobre mi</li>
 				<li>Servicios</li>
 				<li>Proyectos</li>
 				<li>Contacto</li>
@@ -38,19 +39,20 @@
 		<div class="wrapper">
 			<div class="text-intro">
                <h1>MARIONA MERCADAL</h1>
+               <img class="linea" src="img/portfolio-mariona-mercadal-linea.png"/>
                <h2>algo más<br> que una<br> diseñadora web.</h2>
-               <h3>Descúbreme!</h3>
+               <h3>¡Descúbreme!</h3>
            </div>
 		</div>
 
-		<div class="me">
-			
+		<div>
+
 			<img class="avatar" alt="mariona" src="img/portfolio-mariona-mercadal-avatar.svg"/>
 
 		</div>
 
 		<div class="clouds">
-				
+
 				<img class="cloud1" alt="nube1" src="img/portfolio-mariona-mercadal-nube1.svg"/>
 				<img class="cloud2" alt="nube2" src="img/portfolio-mariona-mercadal-nube2.svg"/>
 				<img class="cloud3" alt="nube1" src="img/portfolio-mariona-mercadal-nube3.svg"/>
@@ -60,7 +62,11 @@
 				<img class="cloud7" alt="nube1" src="img/portfolio-mariona-mercadal-nube7.svg"/>
 
 			</div>
-		
+
+            <div>
+				<a href=""><img class="arrows" alt="arrow" src="img/portfolio-mariona-mercadal-flechas.png"/></a>
+			</div>
+
 	</section>
 
 <!-- SOBRE MI -->
@@ -79,7 +85,7 @@
 		</div>
 
 		<div class="clouds">
-				
+
 				<img class="cloud1-b" alt="nube1" src="img/portfolio-mariona-mercadal-nube1-b.svg"/>
 				<img class="cloud2-b" alt="nube2" src="img/portfolio-mariona-mercadal-nube2-b.svg"/>
 				<img class="cloud3-b" alt="nube1" src="img/portfolio-mariona-mercadal-nube3-b.svg"/>
@@ -88,12 +94,11 @@
 
 			</div>
 
-		
-			<img class="molino" alt="molino-viento" src="img/portfolio-mariona-mercadal-molino.svg"/>
 
-			<img class="cow" alt="vaca-menorquina"
-			src="img/portfolio-mariona-mercadal-vaca.svg">
-		
+			<img class="molino" alt="molino-viento" src="img/portfolio-mariona-mercadal-molino.png"/>
+
+			<img class="cow" alt="vaca-menorquina" src="img/portfolio-mariona-mercadal-vaca.png">
+
 	</section>
 
 <!-- SERVICIOS -->
@@ -125,7 +130,7 @@
 		</div>
 
 		<div class="clouds">
-				
+
 			<img class="cloud1-c" alt="nube1" src="img/portfolio-mariona-mercadal-nube1-c.svg"/>
 			<img class="cloud2-c" alt="nube2" src="img/portfolio-mariona-mercadal-nube2-c.svg"/>
 			<img class="cloud3-c" alt="nube1" src="img/portfolio-mariona-mercadal-nube3-c.svg"/>
@@ -134,11 +139,11 @@
 
 		</div>
 
-		
+
 		<div class="sea">
 
-			<img class="faro" alt="" src="img/portfolio-mariona-mercadal-faro.svg"/>
-			<img class="llaut" alt="" src="img/portfolio-mariona-mercadal-llaut.svg"/>
+			<img class="faro" alt="" src="img/portfolio-mariona-mercadal-faro.png"/>
+			<img class="llaut" alt="" src="img/portfolio-mariona-mercadal-llaut.png"/>
 			<img class="roca-delante" alt="" src="img/portfolio-mariona-mercadal-roca-delante.svg"/>
 			<img class="roca-fondo" alt="" src="img/portfolio-mariona-mercadal-roca-fondo.svg"/>
 
@@ -151,29 +156,89 @@
 	<section class="projects">
 		<div class="wrapper">
 			<h1>Proyectos</h1>
-			
+
 				<ul class="menu-projects">
-					<li><a href="">Todos</a></li>
-					<li><a href="">Gráfico</a></li>
-					<li><a href="">Ilustración</a></li>
-					<li><a href="">Editorial</a></li>
-					<li><a href="">Packaging</a></li>
-					<li><a href="">Web</a></li>
+					<li><a href="" data-id="1">Todos</a></li>
+					<li><a href="" data-id="2">Gráfico</a></li>
+					<li><a href="" data-id="3">Ilustración</a></li>
+					<li><a href="" data-id="4">Editorial</a></li>
+					<li><a href="" data-id="5">Packaging</a></li>
+					<li><a href="" data-id="6">Web</a></li>
 				</ul>
 
 			<div class="projects-list">
 
 				<ul>
-					<li><a href=""><img src=""/></a></li>
-					<li><a href=""><img src=""/></a></li>
-					<li><a href=""><img src=""/></a></li>
-					<li><a href=""><img src=""/></a></li>
-					<li><a href=""><img src=""/></a></li>
-					<li><a href=""><img src=""/></a></li>
-					<li><a href=""><img src=""/></a></li>
-					<li><a href=""><img src=""/></a></li>
-					<li><a href=""><img src=""/></a></li>
+					<li data-id="1">
+                        <article>
+                            <img src="img/proyectoI.png"/>
+                            <div class="overlay"></div>
+                            <div class="project-review">
+                                <h1>Exposición Tipografia Kabel</h1>
+                                <button>Ver más</button>
+                            </div>
+                        </article>
+                    </li>
+                    <li data-id="2">
+                        <article>
+                            <img src="img/proyectoI.png"/>
+                            <div class="overlay"></div>
+                            <div class="project-review">
+                                <h1>Exposición Tipografia Kabel</h1>
+                                <button>Ver más</button>
+                            </div>
+                        </article>
+                    </li>
+                    <li data-id="3">
+                        <article>
+                            <img src="img/proyectoI.png"/>
+                            <div class="overlay"></div>
+                            <div class="project-review">
+                                <h1>Exposición Tipografia Kabel</h1>
+                                <button>Ver más</button>
+                            </div>
+                        </article>
+                    </li>
+                    <li data-id="4">
+                        <article>
+                            <img src="img/proyectoI.png"/>
+                            <div class="overlay"></div>
+                            <div class="project-review">
+                                <h1>Exposición Tipografia Kabel</h1>
+                                <button>Ver más</button>
+                            </div>
+                        </article>
+                    </li>
+                    <li data-id="5">
+                        <article>
+                            <img src="img/proyectoI.png"/>
+                            <div class="overlay"></div>
+                            <div class="project-review">
+                                <h1>Exposición Tipografia Kabel</h1>
+                                <button>Ver más</button>
+                            </div>
+                        </article>
+                    </li>
+                    <li data-id="6">
+                        <article>
+                            <img src="img/proyectoI.png"/>
+                            <div class="overlay"></div>
+                            <div class="project-review">
+                                <h1>Exposición Tipografia Kabel</h1>
+                                <button>Ver más</button>
+                            </div>
+                        </article>
+                    </li>
 				</ul>
+
+                <div class="project-detail">
+                    <div class="main"></div>
+                    <div class="project-content">
+                        <p class="title"></p>
+                        <div class="description"></div>
+                    </div>
+                    <div class="gallery"></div>
+                </div>
 
 			</div>
 
@@ -187,7 +252,7 @@
 				<img class="jelly4" src="img/portfolio-mariona-mercadal-medusa4.svg"/>
 				<img class="jelly5" src="img/portfolio-mariona-mercadal-medusa5.svg"/>
 				<img class="jelly6" src="img/portfolio-mariona-mercadal-medusa6.svg"/>
-				
+
 			</div>
 
 	</section>
@@ -208,7 +273,7 @@
 		</div>
 
 		<div class="clouds">
-				
+
 			<img class="cloud1-d" alt="nube1" src="img/portfolio-mariona-mercadal-nube1-d.svg"/>
 			<img class="cloud2-d" alt="nube2" src="img/portfolio-mariona-mercadal-nube2-d.svg"/>
 			<img class="cloud3-d" alt="nube3" src="img/portfolio-mariona-mercadal-nube3-d.svg"/>
@@ -219,11 +284,10 @@
 
 		<div class="final">
 
-			<img class="prova" src="img/prueba.png"/>
-			
-			<!--<img class="avatar-sitting" alt="jo-sentada" src="img/portfolio-mariona-mercadal-avatar-sentado.svg"/>-->
-			
-			
+			<img src="img/portfolio-mariona-mercadal-globo-rrss.png">
+			<img src="img/portfolio-mariona-mercadal-xopi.png"/>
+			<img src="img/portfolio-mariona-mercadal-avatar-sentada.png"/>
+			<img class="prova" src="img/portfolio-mariona-mercadal-footer.png"/>
 
 		</div>
 
@@ -231,6 +295,7 @@
 
 	<script type="text/javascript" src="js/jquery.min.1.12.3.js"></script>
     <script type="text/javascript" src="js/underscore.js"></script>
+    <script type="text/javascript" src="js/projects.js"></script>
     <script type="text/javascript" src="js/functions.js"></script>
 
 </body>

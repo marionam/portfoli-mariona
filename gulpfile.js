@@ -30,6 +30,17 @@ gulp.task("sass", function() {
 		.pipe(gulp.dest("dist/css"));
 });
 
+// Task to convert scss files from src/scss dir to dist/css dir
+gulp.task("sass_media", function() {
+	return gulp.src("src/scss/mediaqueries.scss")
+    .pipe(plumber({
+      errorHandler: onError
+    }))
+    .pipe(sass())
+		.pipe(autoprefixer({browsers: ["last 2 versions", ">1%"] }))
+		.pipe(gulp.dest("dist/css"));
+});
+
 // Task to copy html from src dir to dist dir
 gulp.task("html", function(){
 	return gulp.src("src/*.html")
@@ -57,13 +68,14 @@ gulp.task('imageMin', function(){
 
 
 // Watch
-gulp.task('default', ["sass", "html", "js"], function() {
+gulp.task('default', ["sass", "sass_media", "html", "js"], function() {
   browserSync.init({
     server: {
         baseDir: "dist"
     }
   });
   gulp.watch("src/scss/*", ["sass"]);
+  gulp.watch("src/scss/mediaqueries.scss", ["sass_media"]);
   gulp.watch("src/*.html", ["html"]);
   gulp.watch("src/js/*.js", ["js"]);
   gulp.watch("src/img/*", ["imageMin"]);

@@ -1,0 +1,329 @@
+@charset "UTF-8";
+/* Fonts */
+@font-face {
+  font-family: "FontTitles";
+  src: url("../fonts/AvenirNextLTPro-Bold.woff"); }
+
+/* Sizes */
+/****AJUSTES GENERALES****/
+body {
+  font-size: 62.5%;
+  font-family: 'Josefin Sans', sans-serif;
+  overflow-x: hidden; }
+
+html,
+body,
+ul,
+ol,
+a,
+div,
+section,
+article {
+  margin: 0;
+  padding: 0; }
+  html img,
+  body img,
+  ul img,
+  ol img,
+  a img,
+  div img,
+  section img,
+  article img {
+    border: none;
+    display: block; }
+
+section {
+  width: 100%;
+  float: left;
+  clear: left; }
+  section h1 {
+    font-size: 40px;
+    font-weight: 400; }
+  section h2 {
+    font-size: 30px;
+    font-weight: 400; }
+  section h3 {
+    font-size: 24px;
+    font-weight: 400; }
+  section article h1 {
+    font-size: 36px; }
+
+.intro-wrapper,
+.wrapper {
+  max-width: 1680px;
+  margin: 0 auto;
+  width: 96%;
+  overflow: hidden;
+  position: relative;
+  z-index: 2; }
+
+.intro-wrapper {
+  z-index: 3; }
+
+/****MENU NAVEGACION****/
+nav.main-menu {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  z-index: 3; }
+  nav.main-menu ul {
+    display: none; }
+  nav.main-menu button {
+    font-family: "FontTitles";
+    font-size: 1.6em;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer; }
+  nav.main-menu .intro-button {
+    border: none;
+    background-color: transparent;
+    color: #fceca9; }
+  nav.main-menu .about-me-button {
+    border-radius: 100px;
+    background-color: #c13948;
+    color: #fceca9;
+    box-shadow: 0 0 6px 1px #b19c47; }
+  nav.main-menu .services-button {
+    border-radius: 100px;
+    background-color: #ea5c67;
+    color: #f9d1c9;
+    box-shadow: 0 0 6px 1px #d26169; }
+  nav.main-menu .projects-button {
+    border-radius: 100px;
+    background-color: #f9d1c9;
+    color: #6fbcbe;
+    box-shadow: 0 0 6px 1px #498a8b; }
+  nav.main-menu .contact-button {
+    border-radius: 100px;
+    background-color: #fceca9;
+    color: #6fbcbe;
+    box-shadow: 0 0 6px 1px #7aa5a5; }
+
+/****PORTADA****/
+.avatar {
+  position: absolute;
+  z-index: 2;
+  top: 5%;
+  right: 8%; }
+
+.clouds {
+  width: 100%;
+  top: 0;
+  left: 0; }
+  .clouds img {
+    position: absolute;
+    z-index: 0; }
+
+.cloud1 {
+  top: 5%;
+  left: 2%; }
+
+.cloud2 {
+  top: 9%;
+  right: 14%; }
+
+.cloud3 {
+  top: 42%;
+  left: 13%; }
+
+.cloud4 {
+  top: 39%;
+  right: -6%; }
+
+.cloud5 {
+  top: 61%;
+  right: 20%; }
+
+.cloud6 {
+  bottom: 9%;
+  left: -4%; }
+
+.cloud7 {
+  bottom: 5%;
+  right: 5%; }
+
+.arrows {
+  position: absolute;
+  z-index: 2;
+  bottom: 4%;
+  right: 49%; }
+
+/****SOBRE MI - ILUSTRACIONES****/
+.cloud1-b {
+  top: 8%;
+  left: 50%; }
+
+.cloud2-b {
+  top: 15%;
+  left: 2%; }
+
+.cloud3-b {
+  top: 30%;
+  right: -3%; }
+
+.cloud4-b {
+  top: 47%;
+  left: 15%; }
+
+.cloud5-b {
+  top: 58%;
+  right: 18%; }
+
+.molino {
+  width: 34%;
+  position: absolute;
+  z-index: 2;
+  bottom: -4%;
+  left: 0%; }
+
+.cow {
+  position: absolute;
+  z-index: 2;
+  bottom: -4%;
+  right: 0; }
+
+/****SERVICIOS ILUSTRACIONES****/
+.cloud1-c {
+  top: 3%;
+  left: 15%; }
+
+.cloud2-c {
+  top: 10%;
+  right: 20%; }
+
+.cloud3-c {
+  top: 42%;
+  left: 0%; }
+
+.cloud4-c {
+  bottom: 12%;
+  right: 0%; }
+
+.cloud5-c {
+  bottom: 4%;
+  right: 44%; }
+
+/****PROJECTOS ILUSTRACIONES****/
+.jellyfish {
+  width: 100%;
+  top: 0;
+  left: 0; }
+  .jellyfish img {
+    position: absolute;
+    z-index: 0; }
+
+.jelly1 {
+  top: 4%;
+  left: 1%; }
+
+.jelly2 {
+  top: 52%;
+  right: 0%; }
+
+.jelly3 {
+  top: 99%;
+  left: 33%; }
+
+.jelly4 {
+  top: 120%;
+  left: 0%; }
+
+.jelly5 {
+  bottom: -75%;
+  right: 2%; }
+
+.jelly6 {
+  top: -114%;
+  left: 34%; }
+
+/****CONTACTO****/
+.cloud1-d {
+  top: 6%;
+  left: 6%; }
+
+.cloud2-d {
+  top: 6%;
+  right: 10%; }
+
+.cloud3-d {
+  top: 28%;
+  left: 0%; }
+
+.cloud4-d {
+  bottom: 50%;
+  right: 2%; }
+
+.cloud5-d {
+  bottom: 46%;
+  left: 14%; }
+
+.cloud6-d {
+  bottom: 24%;
+  right: 17%; }
+
+/**** Tablet & Ipad ****/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /****INTRODUCCIÓN****/
+  .intro {
+    height: 100vh; }
+    .intro .text-intro {
+      height: 100vh;
+      margin-top: 20vh; }
+      .intro .text-intro .linea {
+        left: 17%; }
+    .intro h1 {
+      width: 500px;
+      margin: 30px auto 0;
+      padding-bottom: 50px;
+      line-height: 1.4em;
+      font-size: 7.4em;
+      text-align: center;
+      color: #fceca9;
+      z-index: 1; }
+    .intro h2 {
+      width: 600px;
+      margin: 50px auto 0;
+      line-height: 1.6em;
+      font-size: 6em;
+      font-family: "FontTitles";
+      text-align: center;
+      color: #fceca9;
+      z-index: 1; }
+    .intro h3 {
+      width: 100px;
+      font-size: 2em;
+      color: #fceca9;
+      z-index: 1;
+      text-align: center;
+      margin: 50px auto 0;
+      font-weight: 300; }
+  .avatar {
+    width: 28%;
+    position: absolute;
+    z-index: 2;
+    top: 22%;
+    right: 2%; }
+  .clouds img {
+    width: 25%; }
+  .cloud1 {
+    top: 6%;
+    left: 48%; }
+  .cloud2 {
+    top: 23%;
+    left: -10%; }
+  .cloud3 {
+    top: 57%;
+    left: 2%; }
+  .cloud4 {
+    top: 53%;
+    right: -10%; }
+  .cloud5 {
+    visibility: hidden; }
+  .cloud6 {
+    bottom: 10%;
+    left: 10%; }
+  .cloud7 {
+    bottom: 5%;
+    right: 5%; } }
+
+/**** Mobile ****/

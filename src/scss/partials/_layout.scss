@@ -6,6 +6,7 @@ $max-width:1680px;
 body {
 	font-size: 62.5%;
 	font-family: 'Josefin Sans', sans-serif;
+	overflow-x: hidden;
 }
 
 html,
@@ -151,8 +152,8 @@ nav.main-menu {
 
 .cloud2 {
 
-	top: 13%;
-	right: 11%;
+	top: 9%;
+	right: 14%;
 }
 
 .cloud3 {
@@ -164,20 +165,20 @@ nav.main-menu {
 
 .cloud4 {
 
-	top: 42%;
-	right: 0;
+	top: 39%;
+	right: -6%;
 }
 
 .cloud5 {
 
-	top: 49%;
-	right: 21%;
+	top: 61%;
+	right: 20%;
 }
 
 .cloud6 {
 
 	bottom: 9%;
-	left: 0;
+	left: -4%;
 }
 
 
@@ -187,23 +188,31 @@ nav.main-menu {
 	right: 5%;
 }
 
+.arrows {
+
+	position: absolute;
+	z-index: 2;
+	bottom: 4%;
+	right: 49%;
+}
+
 /****SOBRE MI - ILUSTRACIONES****/
 
 .cloud1-b {
-	top: 1%;
-	left: 55%;
+	top: 8%;
+	left: 50%;
 }
 
 .cloud2-b {
 
 	top: 15%;
-	left: 4%;
+	left: 2%;
 }
 
 .cloud3-b {
 
 	top: 30%;
-	right: 0%;
+	right: -3%;
 }
 
 
@@ -215,24 +224,24 @@ nav.main-menu {
 
 .cloud5-b {
 
-	top: 55%;
-	right: 12%;
+	top: 58%;
+	right: 18%;
 }
 
 
 .molino {
-
+	width: 34%;
 	position: absolute;
-	z-index: 0;
-	bottom: 1%;
+	z-index: 2;
+	bottom: -4%;
 	left: 0%;
 }
 
 .cow {
 
 	position: absolute;
-	z-index: 0;
-	bottom: 1%;
+	z-index: 2;
+	bottom: -4%;
 	right: 0;
 
 }

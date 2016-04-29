@@ -8,7 +8,8 @@
 /****AJUSTES GENERALES****/
 body {
   font-size: 62.5%;
-  font-family: 'Josefin Sans', sans-serif; }
+  font-family: 'Josefin Sans', sans-serif;
+  overflow-x: hidden; }
 
 html,
 body,
@@ -118,60 +119,67 @@ nav.main-menu {
   left: 2%; }
 
 .cloud2 {
-  top: 13%;
-  right: 11%; }
+  top: 9%;
+  right: 14%; }
 
 .cloud3 {
   top: 42%;
   left: 13%; }
 
 .cloud4 {
-  top: 42%;
-  right: 0; }
+  top: 39%;
+  right: -6%; }
 
 .cloud5 {
-  top: 49%;
-  right: 21%; }
+  top: 61%;
+  right: 20%; }
 
 .cloud6 {
   bottom: 9%;
-  left: 0; }
+  left: -4%; }
 
 .cloud7 {
   bottom: 5%;
   right: 5%; }
 
+.arrows {
+  position: absolute;
+  z-index: 2;
+  bottom: 4%;
+  right: 49%; }
+
 /****SOBRE MI - ILUSTRACIONES****/
 .cloud1-b {
-  top: 1%;
-  left: 55%; }
+  top: 8%;
+  left: 50%; }
 
 .cloud2-b {
   top: 15%;
-  left: 4%; }
+  left: 2%; }
 
 .cloud3-b {
   top: 30%;
-  right: 0%; }
+  right: -3%; }
 
 .cloud4-b {
   top: 47%;
   left: 15%; }
 
 .cloud5-b {
-  top: 55%;
-  right: 12%; }
+  top: 58%;
+  right: 18%; }
 
 .molino {
+  width: 34%;
   position: absolute;
-  z-index: 0;
-  bottom: 1%;
+  z-index: 2;
+  bottom: -4%;
   left: 0%; }
 
 .cow {
   position: absolute;
-  z-index: 0;
-  bottom: 1%;
+  z-index: 2;
+  bottom: -4%;
   right: 0; }
 
 /****SERVICIOS ILUSTRACIONES****/
@@ -253,6 +261,103 @@ nav.main-menu {
   bottom: 24%;
   right: 17%; }
 
+.projects .projects-list ul li {
+  position: relative; }
+  .projects .projects-list ul li article {
+    position: relative; }
+  .projects .projects-list ul li img {
+    width: 100%;
+    min-width: 220px;
+    min-height: 158px;
+    max-width: 350px;
+    max-height: 251px; }
+  .projects .projects-list ul li .overlay {
+    background-color: #000;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: none; }
+  .projects .projects-list ul li .project-review {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    min-width: 220px;
+    min-height: 158px;
+    max-width: 350px;
+    max-height: 251px;
+    display: none; }
+    .projects .projects-list ul li .project-review h1 {
+      font-size: 3.2em;
+      color: #fff;
+      text-align: center;
+      font-weight: bold;
+      border-bottom: 4px dotted #fff;
+      width: 85%;
+      display: block;
+      margin: 7% auto;
+      padding: 0 0 5% 0; }
+    .projects .projects-list ul li .project-review button {
+      width: 90px;
+      margin: 0 auto;
+      display: block;
+      border-radius: 90px;
+      border: none;
+      color: #add9d9;
+      padding: 10px 5px;
+      font-size: 1.8em;
+      font-family: 'Josefin Sans', 'Sans serif';
+      background-color: #fff;
+      cursor: pointer;
+      font-weight: bold; }
+      .projects .projects-list ul li .project-review button:hover {
+        color: #fff;
+        background-color: #add9d9; }
+  .projects .projects-list ul li.selected .project-review,
+  .projects .projects-list ul li.selected .overlay {
+    display: block; }
+
+.projects .projects-list .project-detail {
+  display: none;
+  position: absolute;
+  background-color: #338c8f;
+  border-radius: 8px;
+  padding: 15px;
+  box-sizing: border-box;
+  max-width: 1190px; }
+  .projects .projects-list .project-detail .main {
+    width: 45%;
+    float: left; }
+    .projects .projects-list .project-detail .main img {
+      width: 100%; }
+  .projects .projects-list .project-detail .gallery {
+    width: 55%;
+    float: right;
+    clear: right; }
+    .projects .projects-list .project-detail .gallery img {
+      width: 20%;
+      float: left; }
+  .projects .projects-list .project-detail .project-content {
+    width: 50%;
+    float: right;
+    min-height: 400px; }
+  .projects .projects-list .project-detail .title,
+  .projects .projects-list .project-detail .description {
+    color: #f9d1c9; }
+  .projects .projects-list .project-detail .title {
+    font-size: 3.2em;
+    font-weight: bold; }
+  .projects .projects-list .project-detail .description {
+    width: 80%; }
+    .projects .projects-list .project-detail .description p {
+      font-size: 2.2em; }
+
 /****DECLARACIONES GENERALES****/
 section {
   min-height: 580px;
@@ -277,14 +382,17 @@ p {
   height: 100vh; }
   .intro .text-intro {
     height: 100vh;
-    margin-top: 8vh; }
+    margin-top: 6vh; }
+    .intro .text-intro img {
+      position: absolute;
+      left: 32.5%; }
   .intro h1 {
     width: 500px;
     margin: 30px auto 0;
     padding-bottom: 30px;
     line-height: 1.4em;
-    font-size: 8em;
-    border-bottom: dotted 2px #fceca9;
+    font-size: 8.3em;
+    /*border-bottom: dotted 2px #fceca9;*/
     text-align: center;
     color: #fceca9;
     z-index: 1; }
@@ -309,15 +417,19 @@ p {
 /****SOBRE MI****/
 .about-me {
   background-color: #fceca9;
-  height: 800px; }
+  height: 1000px;
+  /*min-height: 400px;*/
+  position: relative; }
+  .about-me img {
+    position: absolute; }
   .about-me h1 {
     max-width: 650px;
     width: 100%;
-    margin: 100px auto 0;
+    margin-top: 100px;
     color: #c13948;
     text-align: left; }
   .about-me p {
-    max-width: 650px;
+    max-width: 600px;
     width: 100%;
     color: #c13948;
     z-index: 1;
@@ -362,7 +474,7 @@ p {
       margin-left: 25%; }
   .services h1 {
     text-align: center;
-    margin-top: 100px; }
+    margin-top: 150px; }
   .services h2 {
     font-family: 'FontTitles', sans-serif; }
 
@@ -442,31 +554,31 @@ p {
         display: block;
         float: left;
         margin-bottom: 50px; }
-        .projects .projects-list ul li:nth-child(2) a {
+        .projects .projects-list ul li:nth-child(2) article {
           margin: 0 auto; }
-        .projects .projects-list ul li:nth-child(5) a {
+        .projects .projects-list ul li:nth-child(5) article {
           margin: 0 auto; }
-        .projects .projects-list ul li:nth-child(8) a {
+        .projects .projects-list ul li:nth-child(8) article {
           margin: 0 auto; }
-        .projects .projects-list ul li:nth-child(11) a {
+        .projects .projects-list ul li:nth-child(11) article {
           margin: 0 auto; }
-        .projects .projects-list ul li:nth-child(14) a {
+        .projects .projects-list ul li:nth-child(14) article {
           margin: 0 auto; }
-        .projects .projects-list ul li:nth-child(17) a {
+        .projects .projects-list ul li:nth-child(17) article {
           margin: 0 auto; }
-        .projects .projects-list ul li:nth-child(20) a {
+        .projects .projects-list ul li:nth-child(20) article {
           margin: 0 auto; }
-        .projects .projects-list ul li:nth-child(23) a {
+        .projects .projects-list ul li:nth-child(23) article {
           margin: 0 auto; }
-        .projects .projects-list ul li:nth-child(3n) a {
+        .projects .projects-list ul li:nth-child(3n) article {
           float: right; }
-        .projects .projects-list ul li a {
-          width: 100%;
+        .projects .projects-list ul li article {
+          width: 90%;
           display: block;
           border: 6px solid #add9d9;
           border-radius: 8px;
-          min-width: 300px;
-          min-height: 215px;
+          min-width: 220px;
+          min-height: 158px;
           max-width: 350px;
           max-height: 251px; }
 

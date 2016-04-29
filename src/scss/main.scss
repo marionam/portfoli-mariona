@@ -1,6 +1,7 @@
 @import 'partials/colors';
 @import 'partials/fonts';
 @import 'partials/layout';
+@import 'partials/projects';
 
 /****DECLARACIONES GENERALES****/
 
@@ -34,8 +35,14 @@ p {
 
 	 .text-intro {
        height: 100vh;
-       margin-top: 8vh;
+       margin-top: 6vh;
+
+       img{
+       	position: absolute;
+       	left: 32.5%,
+       }
    	}
+   
 
 	h1{
 
@@ -43,8 +50,8 @@ p {
 		margin: 30px auto 0;
 		padding-bottom: 30px;
 		line-height: 1.4em;
-		font-size: 8em;
-		border-bottom: dotted 2px #fceca9;
+		font-size: 8.3em;
+		/*border-bottom: dotted 2px #fceca9;*/
 		text-align: center;
 		color: $yellow-color;
 		z-index: 1;
@@ -78,21 +85,28 @@ p {
 
 .about-me {
 	background-color: $yellow-color;
-	height: 800px;
+	height: 1000px;
+	/*min-height: 400px;*/
+	position: relative;
+
+	img{
+
+		position: absolute;
+	}
 
 	h1{
 
 		max-width: 650px;
        width: 100%;
-       margin: 100px auto 0;
+       margin-top: 100px;
 		color: $red-color;
        text-align: left;
 
 	}
 
 	p {
-		max-width: 650px;
-       width: 100%;
+		max-width: 600px;
+       	width: 100%;
 		color: $red-color;
 		z-index: 1;
 		text-align: justify;
@@ -156,7 +170,7 @@ p {
 
 		h1{
 			text-align: center;
-			margin-top: 100px;
+			margin-top: 150px;
 		}
 
 	h2{
@@ -273,27 +287,30 @@ p {
                 margin-bottom: 50px;
 
                 @each $num in (2,5,8,11,14,17,20,23) {
-                    &:nth-child(#{$num}) a {
+                    &:nth-child(#{$num}) article {
                         margin: 0 auto;
                     }
                 }
 
-                &:nth-child(3n) a {
+                &:nth-child(3n) article {
                     float: right;
                 }
 
-                a {
-                    width: 100%;
-                    display: block;
-                    border: 6px solid $light-blue-color;
-                    -webkit-border-radius: 8px;
-                    -moz-border-radius: 8px;
-                    border-radius: 8px;
-                    min-width: 300px;
-                    min-height: 215px;
-                    max-width: 350px;
-                    max-height: 251px;
-                }
+				article {
+                   width: 90%;
+                   display: block;
+                   border: $project-border-width solid $light-blue-color;
+                   -webkit-border-radius: 8px;
+                   -moz-border-radius: 8px;
+                   border-radius: 8px;
+                   min-width: $project-min-width;
+                   min-height: $project-min-height;
+                   max-width: $project-max-width;
+                   max-height: $project-max-height;
+           		}
+
+
+
             }
         }
 	}

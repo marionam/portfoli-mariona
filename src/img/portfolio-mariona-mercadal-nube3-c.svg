@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="112px" height="71px" viewBox="0 0 112 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="159px" height="71px" viewBox="0 0 159 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.4 (15575) - http://www.bohemiancoding.com/sketch -->
     <title>Fill 1 + Fill 3</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Desktop-HD-Copy" sketch:type="MSArtboardGroup" transform="translate(0.000000, -2205.000000)">
-            <g id="Fill-1-+-Fill-3" sketch:type="MSLayerGroup" transform="translate(-47.000000, 2205.000000)">
+        <g id="Desktop-HD-Copy" sketch:type="MSArtboardGroup" transform="translate(-53.000000, -2206.000000)">
+            <g id="Fill-1-+-Fill-3" sketch:type="MSLayerGroup" transform="translate(53.000000, 2206.000000)">
                 <path d="M137.219178,26.9689922 L108.90411,26.9689922 C108.343253,26.9689922 107.788932,26.9755969 107.238421,27.0174264 C107.611418,25.4031395 107.815068,23.733814 107.815068,22.0044961 C107.815068,9.84588372 98.0637945,0 86.0342466,0 L79.5,0 L79.5,71 L108.90411,71 L127.417808,71 L137.219178,71 C149.248726,71 159,61.1436589 159,48.9844961 C159,36.8258837 149.248726,26.9689922 137.219178,26.9689922" id="Fill-1" fill="#FEFEFE" sketch:type="MSShapeGroup"></path>
                 <path d="M57.7191781,0 C45.6896301,0 35.9383562,9.85689147 35.9383562,22.0155039 C35.9383562,23.7195039 36.1360171,25.3178295 36.4986678,26.9689922 L21.7808219,26.9689922 C9.75181849,26.9689922 0,36.8258837 0,48.9844961 C0,61.1431085 9.75181849,71 21.7808219,71 L35.9383562,71 L50.0958904,71 L79.5,71 L79.5,0 L57.7191781,0 Z" id="Fill-3" fill-opacity="0.5" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
             </g>
