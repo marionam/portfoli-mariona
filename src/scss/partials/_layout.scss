@@ -25,6 +25,11 @@ article {
 	}
 }
 
+button,
+button:focus {
+    outline:0;
+}
+
 section {
 	width: 100%;
 	float: left;
@@ -87,7 +92,7 @@ nav.main-menu {
 	.intro-button {
 		border: none;
 		background-color: transparent;
-		color: $yellow-color;	
+		color: $yellow-color;
 	}
 
 	.about-me-button {
@@ -95,7 +100,7 @@ nav.main-menu {
 		background-color: $red-color;
 		color: $yellow-color;
 		box-shadow: 0 0 6px 1px #b19c47;
-		
+
 	}
 
 	.services-button {
@@ -103,7 +108,7 @@ nav.main-menu {
 		background-color: $dark-pink-color;
 		color: $pink-color;
 		box-shadow: 0 0 6px 1px #d26169;
-		
+
 	}
 
 	.projects-button {
@@ -111,7 +116,7 @@ nav.main-menu {
 		background-color: $pink-color;
 		color: $dark-blue-color;
 		box-shadow: 0 0 6px 1px #498a8b;
-		
+
 	}
 
 	.contact-button {
@@ -119,7 +124,7 @@ nav.main-menu {
 		background-color: $yellow-color;
 		color: $dark-blue-color;
 		box-shadow: 0 0 6px 1px #7aa5a5;
-		
+
 	}
 
 
@@ -128,7 +133,7 @@ nav.main-menu {
 /****PORTADA****/
 
 .avatar{
-	
+
 	position: absolute;
 	z-index: 2;
 	top: 5%;

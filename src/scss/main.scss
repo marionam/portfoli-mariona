@@ -13,9 +13,9 @@ section {
 h1{
 	font-size: $h1-article-fsize;
 	font-family: "FontTitles";
-	margin: 30px 350px 0;
+	margin: 30px auto;
 	padding-bottom: 30px;
-	text-align: left;
+	text-align: center;
 	z-index: 1;
 
 }
@@ -35,20 +35,38 @@ p {
 
 	 .text-intro {
        height: 100vh;
-       margin-top: 6vh;
+       margin-top: 16vh;
 
        img{
        	position: absolute;
        	left: 32.5%,
        }
+
+        .linea {
+            width: 500px;
+            margin: 0 auto;
+            display: block;
+            height: 4px;
+            background: url("../img/portfolio-mariona-mercadal-linea.png") repeat-x 0 0;
+        }
+
+        a {
+            display: block;
+            width: 18px;
+            margin: 20px auto;
+
+            img.arrows {
+                position: inherit;
+            }
+   	    }
    	}
-   
+
 
 	h1{
 
 		width: 500px;
 		margin: 30px auto 0;
-		padding-bottom: 30px;
+		padding-bottom: 15px;
 		line-height: 1.4em;
 		font-size: 8.3em;
 		/*border-bottom: dotted 2px #fceca9;*/
@@ -71,7 +89,6 @@ p {
 	}
 
 	h3 {
-		width: 100px;
 		font-size: 2em;
 		color: $yellow-color;
 		z-index: 1;
@@ -94,14 +111,11 @@ p {
 		position: absolute;
 	}
 
-	h1{
-
-		max-width: 650px;
-       width: 100%;
-       margin-top: 100px;
-		color: $red-color;
-       text-align: left;
-
+	h1 {
+        max-width: 650px;
+        width: 100%;
+        margin-top: 100px;
+        color: $red-color;
 	}
 
 	p {
@@ -118,14 +132,13 @@ p {
 		font-family: 'FontTitles';
 		font-size: $h3-fsize;
 		color: $red-color;
-		width: 293.8px;
-        height: 55.1px;
+		width: 294px;
+        height: 55px;
         border-radius: 100px;
         background-color: $yellow-color;
         border: solid 2px $red-color;
-        position: absolute;
-        right: 40%;
-        bottom: 15%;
+        margin: 70px auto 0;
+        display: block;
 
         &:hover {
           background-color: $red-color;
@@ -319,7 +332,7 @@ p {
 /****CONTACTO****/
 
 .contact {
-	background-color: $light-blue-color;
+	background: $light-blue-color url(../img/portfolio-mariona-mercadal-footer.png) no-repeat center bottom;
 
     .wrapper {
         min-height: 580px;
@@ -332,70 +345,111 @@ p {
 	}
 
 	form {
-width: 490px;
-margin: auto;
-}
+        width: 490px;
+        margin: auto;
+    }
 
-input, textarea {
-width: 470px;
- 	border-radius: 8px;
- 	background-color: #6fbcbe;
- 	border: none;
- 	color: $yellow-color;
- 	font-size: $p-fsize;
- 	margin-top: 40px;
-       font-family: 'Josefin Sans','Sans serif';
-       padding: 15px 10px;
-}
+    input, textarea {
+        width: 470px;
+        border-radius: 8px;
+        background-color: #6fbcbe;
+        border: none;
+        color: $yellow-color;
+        font-size: $p-fsize;
+        margin-top: 40px;
+        font-family: 'Josefin Sans','Sans serif';
+        padding: 15px 10px;
+    }
 
-input:focus,
-   textarea:focus {
+    input:focus,
+    textarea:focus {
        outline: none;
        box-shadow: 0 0 6px 1px $yellow-color;
-   }
+    }
 
-   /* do not group these rules */
-   *::-webkit-input-placeholder {
-       color: $yellow-color;
-   }
-   *:-moz-placeholder {
-       /* FF 4-18 */
-       color: $yellow-color;
-   }
-   *::-moz-placeholder {
-       /* FF 19+ */
-       color: $yellow-color;
-   }
-   *:-ms-input-placeholder {
-       /* IE 10+ */
-       color: $yellow-color;
-   }
+    /* do not group these rules */
+    *::-webkit-input-placeholder {
+        color: $yellow-color;
+    }
+    *:-moz-placeholder {
+        /* FF 4-18 */
+        color: $yellow-color;
+    }
+    *::-moz-placeholder {
+        /* FF 19+ */
+        color: $yellow-color;
+    }
+    *:-ms-input-placeholder {
+        /* IE 10+ */
+        color: $yellow-color;
+    }
 
 
-button {
-	width: 131px;
- 	height: 50px;
- 	border-radius: 95px;
- 	background-color: $yellow-color;
- 	border: none;
- 	color: $dark-blue-color;
- 	font-size: 2.2em;
- 	font-weight: bold;
- 	margin: 50px auto 0;
-    display: block;
-    font-family: 'Josefin Sans','Sans serif';
-   
-   &:hover{
-   	background-color: $dark-blue-color;
-   	color: $yellow-color;
-   	cursor: pointer;
-   }
-}
+    button {
+        width: 131px;
+        height: 50px;
+        border-radius: 95px;
+        background-color: $yellow-color;
+        border: none;
+        color: $dark-blue-color;
+        font-size: 2.2em;
+        font-weight: bold;
+        margin: 50px auto 0;
+        display: block;
+        font-family: 'Josefin Sans','Sans serif';
+
+       &:hover{
+        background-color: $dark-blue-color;
+        color: $yellow-color;
+        cursor: pointer;
+       }
+    }
 
     .final {
         position: relative;
-        .prova {
+        min-height: 400px;
+
+        img {
+            position: absolute;
+        }
+
+        .bg {
             width: 100%;
+            z-index: 0;
+            bottom: 0;
+        }
+
+        .social {
+            position: absolute;
+            z-index: 1;
+            left: 14.8%;
+            bottom: 256px;
+            width: 317px;
+            height: 106px;
+            background: url(../img/portfolio-mariona-mercadal-globo-rrss.png) no-repeat left center;
+
+            img,
+            a {
+                float: left;
+                display: block;
+                margin: 6px 9px 0;
+                width: 57px;
+                position: initial;
+            }
+        }
+
+        .xopi {
+            left: 14.8%;
+            z-index: 1;
+            bottom: 105px;
+        }
+
+        .sentada {
+            z-index: 1;
+            bottom: 55px;
+            right: 12%;
+            width: 90%;
+            max-width: 175px;
         }
     }
 }

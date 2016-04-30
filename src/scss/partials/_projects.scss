@@ -23,11 +23,11 @@ $project-max-height: 251px;
                 }
 
                 .overlay {
-                    background-color: #000;
+                    background-color: #358e90;
                     z-index: 1;
                     width: 100%;
                     height: 100%;
-                    opacity: .2;
+                    opacity: .8;
                     top: 0;
                     left: 0;
                     position: absolute;
@@ -49,7 +49,7 @@ $project-max-height: 251px;
 
                     h1 {
                         font-size: 3.2em;
-                        color: #fff;
+                        color: $pink-color;
                         text-align: center;
                         font-weight: bold;
                         border-bottom: 4px dotted #fff;
@@ -91,11 +91,15 @@ $project-max-height: 251px;
         .project-detail {
             display: none;
             position: absolute;
-            background-color: #338c8f;
+            background-image: linear-gradient(314deg, #338c8f, #6BB3B5);
             border-radius: 8px;
             padding: 15px;
             box-sizing: border-box;
             max-width: 1190px;
+
+            a.close {
+                float: right;
+            }
 
             .main {
                 width: 45%;
@@ -107,20 +111,27 @@ $project-max-height: 251px;
             }
 
             .gallery {
-                width: 55%;
+                width: 52%;
                 float: right;
                 clear: right;
+                margin-left: 20px;
 
                 img {
                     width: 20%;;
                     float: left;
+                    cursor: pointer;
+                    margin-right: 33px;
+
+                    &.last {
+                        margin-right: 0;
+                    }
                 }
             }
 
             .project-content {
-                width: 50%;
+                width: 52%;
                 float: right;
-                min-height: 400px;
+                min-height: 521px;
             }
 
             .title,
@@ -131,13 +142,29 @@ $project-max-height: 251px;
             .title {
                 font-size: 3.2em;
                 font-weight: bold;
+                margin-top: .5em;
+                margin-bottom: .5em;
+                font-family: "FontTitles";
             }
 
             .description {
-                width: 80%;
+                width: 90%;
 
                 p {
                     font-size: 2.2em;
+
+                    &.categories {
+                        margin: .3em 0;
+                        font-size: 1.8em;
+                        margin-bottom: 2em;
+                    }
+
+                    span {
+                        border-radius: 50px;
+                        background-color: #6fbcbe;
+                        padding: 8px 12px;
+                        margin-right: 15px;
+                    }
                 }
             }
         }

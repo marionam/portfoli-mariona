@@ -32,6 +32,10 @@ article {
     border: none;
     display: block; }
 
+button,
+button:focus {
+  outline: 0; }
+
 section {
   width: 100%;
   float: left;
@@ -272,11 +276,11 @@ nav.main-menu {
     max-width: 350px;
     max-height: 251px; }
   .projects .projects-list ul li .overlay {
-    background-color: #000;
+    background-color: #358e90;
     z-index: 1;
     width: 100%;
     height: 100%;
-    opacity: .2;
+    opacity: .8;
     top: 0;
     left: 0;
     position: absolute;
@@ -295,7 +299,7 @@ nav.main-menu {
     display: none; }
     .projects .projects-list ul li .project-review h1 {
       font-size: 3.2em;
-      color: #fff;
+      color: #f9d1c9;
       text-align: center;
       font-weight: bold;
       border-bottom: 4px dotted #fff;
@@ -326,37 +330,57 @@ nav.main-menu {
 .projects .projects-list .project-detail {
   display: none;
   position: absolute;
-  background-color: #338c8f;
+  background-image: -webkit-linear-gradient(136deg, #338c8f, #6BB3B5);
+  background-image: linear-gradient(314deg, #338c8f, #6BB3B5);
   border-radius: 8px;
   padding: 15px;
   box-sizing: border-box;
   max-width: 1190px; }
+  .projects .projects-list .project-detail a.close {
+    float: right; }
   .projects .projects-list .project-detail .main {
     width: 45%;
     float: left; }
     .projects .projects-list .project-detail .main img {
       width: 100%; }
   .projects .projects-list .project-detail .gallery {
-    width: 55%;
+    width: 52%;
     float: right;
-    clear: right; }
+    clear: right;
+    margin-left: 20px; }
     .projects .projects-list .project-detail .gallery img {
       width: 20%;
-      float: left; }
+      float: left;
+      cursor: pointer;
+      margin-right: 33px; }
+      .projects .projects-list .project-detail .gallery img.last {
+        margin-right: 0; }
   .projects .projects-list .project-detail .project-content {
-    width: 50%;
+    width: 52%;
     float: right;
-    min-height: 400px; }
+    min-height: 521px; }
   .projects .projects-list .project-detail .title,
   .projects .projects-list .project-detail .description {
     color: #f9d1c9; }
   .projects .projects-list .project-detail .title {
     font-size: 3.2em;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    font-family: "FontTitles"; }
   .projects .projects-list .project-detail .description {
-    width: 80%; }
+    width: 90%; }
     .projects .projects-list .project-detail .description p {
       font-size: 2.2em; }
+      .projects .projects-list .project-detail .description p.categories {
+        margin: .3em 0;
+        font-size: 1.8em;
+        margin-bottom: 2em; }
+      .projects .projects-list .project-detail .description p span {
+        border-radius: 50px;
+        background-color: #6fbcbe;
+        padding: 8px 12px;
+        margin-right: 15px; }
 
 /****DECLARACIONES GENERALES****/
 section {
@@ -366,9 +390,9 @@ section {
 h1 {
   font-size: 36px;
   font-family: "FontTitles";
-  margin: 30px 350px 0;
+  margin: 30px auto;
   padding-bottom: 30px;
-  text-align: left;
+  text-align: center;
   z-index: 1; }
 
 p {
@@ -382,14 +406,26 @@ p {
   height: 100vh; }
   .intro .text-intro {
     height: 100vh;
-    margin-top: 6vh; }
+    margin-top: 16vh; }
     .intro .text-intro img {
       position: absolute;
       left: 32.5%; }
+    .intro .text-intro .linea {
+      width: 500px;
+      margin: 0 auto;
+      display: block;
+      height: 4px;
+      background: url("../img/portfolio-mariona-mercadal-linea.png") repeat-x 0 0; }
+    .intro .text-intro a {
+      display: block;
+      width: 18px;
+      margin: 20px auto; }
+      .intro .text-intro a img.arrows {
+        position: inherit; }
   .intro h1 {
     width: 500px;
     margin: 30px auto 0;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     line-height: 1.4em;
     font-size: 8.3em;
     /*border-bottom: dotted 2px #fceca9;*/
@@ -406,7 +442,6 @@ p {
     color: #fceca9;
     z-index: 1; }
   .intro h3 {
-    width: 100px;
     font-size: 2em;
     color: #fceca9;
     z-index: 1;
@@ -426,8 +461,7 @@ p {
     max-width: 650px;
     width: 100%;
     margin-top: 100px;
-    color: #c13948;
-    text-align: left; }
+    color: #c13948; }
   .about-me p {
     max-width: 600px;
     width: 100%;
@@ -440,14 +474,13 @@ p {
     font-family: 'FontTitles';
     font-size: 24px;
     color: #c13948;
-    width: 293.8px;
-    height: 55.1px;
+    width: 294px;
+    height: 55px;
     border-radius: 100px;
     background-color: #fceca9;
     border: solid 2px #c13948;
-    position: absolute;
-    right: 40%;
-    bottom: 15%; }
+    margin: 70px auto 0;
+    display: block; }
     .about-me button:hover {
       background-color: #c13948;
       color: #fceca9;
@@ -584,7 +617,7 @@ p {
 
 /****CONTACTO****/
 .contact {
-  background-color: #add9d9;
+  background: #add9d9 url(../img/portfolio-mariona-mercadal-footer.png) no-repeat center bottom;
   /* do not group these rules */ }
   .contact .wrapper {
     min-height: 580px; }
@@ -637,6 +670,36 @@ p {
       color: #fceca9;
       cursor: pointer; }
   .contact .final {
-    position: relative; }
-    .contact .final .prova {
-      width: 100%; }
+    position: relative;
+    min-height: 400px; }
+    .contact .final img {
+      position: absolute; }
+    .contact .final .bg {
+      width: 100%;
+      z-index: 0;
+      bottom: 0; }
+    .contact .final .social {
+      position: absolute;
+      z-index: 1;
+      left: 14.8%;
+      bottom: 256px;
+      width: 317px;
+      height: 106px;
+      background: url(../img/portfolio-mariona-mercadal-globo-rrss.png) no-repeat left center; }
+      .contact .final .social img,
+      .contact .final .social a {
+        float: left;
+        display: block;
+        margin: 6px 9px 0;
+        width: 57px;
+        position: initial; }
+    .contact .final .xopi {
+      left: 14.8%;
+      z-index: 1;
+      bottom: 105px; }
+    .contact .final .sentada {
+      z-index: 1;
+      bottom: 55px;
+      right: 12%;
+      width: 90%;
+      max-width: 175px; }

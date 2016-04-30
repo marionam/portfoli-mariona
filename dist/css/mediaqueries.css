@@ -32,6 +32,10 @@ article {
     border: none;
     display: block; }
 
+button,
+button:focus {
+  outline: 0; }
+
 section {
   width: 100%;
   float: left;
@@ -324,6 +328,18 @@ nav.main-menu {
     left: 10%; }
   .cloud7 {
     bottom: 5%;
-    right: 5%; } }
+    right: 5%; }
+  /****SOBRE MI****/
+  .molino {
+    width: 34%;
+    position: absolute;
+    z-index: 2;
+    bottom: -3%;
+    left: 0%; }
+  .cow {
+    position: absolute;
+    z-index: 2;
+    bottom: -4%;
+    right: -21%; } }
 
 /**** Mobile ****/
