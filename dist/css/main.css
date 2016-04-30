@@ -188,11 +188,11 @@ nav.main-menu {
 
 /****SERVICIOS ILUSTRACIONES****/
 .cloud1-c {
-  top: 3%;
+  top: 15%;
   left: 15%; }
 
 .cloud2-c {
-  top: 10%;
+  top: 24%;
   right: 20%; }
 
 .cloud3-c {
@@ -317,9 +317,9 @@ nav.main-menu {
       padding: 10px 5px;
       font-size: 1.8em;
       font-family: 'Josefin Sans', 'Sans serif';
-      background-color: #fff;
+      background-color: #f9d1c9;
       cursor: pointer;
-      font-weight: bold; }
+      font-weight: 800; }
       .projects .projects-list ul li .project-review button:hover {
         color: #fff;
         background-color: #add9d9; }
@@ -335,7 +335,7 @@ nav.main-menu {
   border-radius: 8px;
   padding: 15px;
   box-sizing: border-box;
-  max-width: 1190px; }
+  max-width: 1200px; }
   .projects .projects-list .project-detail a.close {
     float: right; }
   .projects .projects-list .project-detail .main {
@@ -398,7 +398,7 @@ h1 {
 p {
   font-size: 1.9em;
   line-height: 1.4em;
-  font-weight: 300; }
+  font-weight: 400; }
 
 /****INTRODUCCIÓN****/
 .intro {
@@ -446,8 +446,8 @@ p {
     color: #fceca9;
     z-index: 1;
     text-align: center;
-    margin: 20px auto 0;
-    font-weight: 300; }
+    margin: 50px auto 0;
+    font-weight: 600; }
 
 /****SOBRE MI****/
 .about-me {
@@ -458,10 +458,11 @@ p {
   .about-me img {
     position: absolute; }
   .about-me h1 {
-    max-width: 650px;
+    max-width: 600px;
     width: 100%;
     margin-top: 100px;
-    color: #c13948; }
+    color: #c13948;
+    text-align: left; }
   .about-me p {
     max-width: 600px;
     width: 100%;
@@ -492,19 +493,20 @@ p {
   background-color: #f9d1c9; }
   .services .clouds {
     position: absolute;
-    min-height: 580px; }
+    min-height: 735px; }
   .services .wrapper {
-    min-height: 580px;
+    min-height: 735px;
     color: #ea5c67; }
   .services article {
     width: 22%;
     float: left;
     margin-right: 3%;
     text-align: center;
-    vertical-align: center;
     margin-top: 2%; }
     .services article img {
-      margin-left: 25%; }
+      display: block;
+      margin: 0 auto;
+      width: 40%; }
   .services h1 {
     text-align: center;
     margin-top: 150px; }
@@ -519,7 +521,7 @@ p {
     position: absolute; }
   .sea .faro {
     top: -30%;
-    left: 22%; }
+    left: 27%; }
   .sea .llaut {
     right: 14%;
     top: 27%; }
@@ -547,7 +549,7 @@ p {
     color: #f9d1c9;
     margin-top: 100px; }
   .projects ul.menu-projects {
-    max-width: 1240px;
+    max-width: 1250px;
     width: 100%;
     margin: 20px auto;
     padding: 0;
@@ -583,7 +585,7 @@ p {
     .projects .projects-list ul {
       width: 100%; }
       .projects .projects-list ul li {
-        width: 33%;
+        width: 33.3%;
         display: block;
         float: left;
         margin-bottom: 50px; }

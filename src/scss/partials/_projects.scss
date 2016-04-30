@@ -69,9 +69,9 @@ $project-max-height: 251px;
                         padding: 10px 5px;
                         font-size: 1.8em;
                         font-family: 'Josefin Sans', 'Sans serif';
-                        background-color: #fff;
+                        background-color: $pink-color;
                         cursor: pointer;
-                        font-weight: bold;
+                        font-weight: 800;
 
                         &:hover {
                             color: #fff;
@@ -95,7 +95,7 @@ $project-max-height: 251px;
             border-radius: 8px;
             padding: 15px;
             box-sizing: border-box;
-            max-width: 1190px;
+            max-width: 1200px;
 
             a.close {
                 float: right;

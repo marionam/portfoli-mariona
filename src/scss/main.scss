@@ -23,7 +23,7 @@ h1{
 p {
 	font-size: $p-fsize;
 	line-height: 1.4em;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 /****INTRODUCCIÓN****/
@@ -93,8 +93,8 @@ p {
 		color: $yellow-color;
 		z-index: 1;
 		text-align: center;
-		margin: 20px auto 0;
-		font-weight: 300;
+        margin: 50px auto 0;
+		font-weight: 600;
 	}
 }
 
@@ -112,10 +112,11 @@ p {
 	}
 
 	h1 {
-        max-width: 650px;
+        max-width: 600px;
         width: 100%;
         margin-top: 100px;
         color: $red-color;
+        text-align: left;
 	}
 
 	p {
@@ -159,11 +160,11 @@ p {
 
 	.clouds {
 		position: absolute;
-		min-height: 580px;
+		min-height: 735px;
 	}
 
 	.wrapper {
-		min-height: 580px;
+		min-height: 735px;
 		color: $dark-pink-color;
 	}
 	article {
@@ -171,12 +172,13 @@ p {
 		float: left;
 		margin-right: 3%;
 		text-align: center;
-		vertical-align: center;
 		margin-top: 2%;
 
 
 		img {
-			margin-left: 25%;
+			display: block;
+            margin: 0 auto;
+            width: 40%;
 		}
 	}
 
@@ -203,7 +205,7 @@ p {
 	}
 	.faro {
 		top: -30%;
-		left: 22%;
+		left: 27%;
 	}
 	.llaut {
 		right: 14%;
@@ -248,7 +250,7 @@ p {
 
 	ul.menu-projects {
 
-		max-width: 1240px;
+		max-width: 1250px;
 		width: 100%;
 		margin: 20px auto;
 		padding: 0;
@@ -294,7 +296,7 @@ p {
             width: 100%;
 
             li {
-                width: 33%;
+                width: 33.3%;
                 display: block;
                 float: left;
                 margin-bottom: 50px;
@@ -321,9 +323,6 @@ p {
                    max-width: $project-max-width;
                    max-height: $project-max-height;
            		}
-
-
-
             }
         }
 	}

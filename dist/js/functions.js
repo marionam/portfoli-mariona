@@ -11,7 +11,7 @@ $(document).ready(function(){
         $(this).parent().find("ul").toggle();
     });
     // Init Projects category button
-    defaultProjectsSectionHeight = $("section.projects .wrapper").outerHeight();
+    defaultProjectsSectionHeight = $("section.projects .wrapper").outerHeight() + 240;
     initProjectCategoryButtons();
     // Init Projects list Section
     initProjectListSection();

@@ -4,269 +4,17 @@
   font-family: "FontTitles";
   src: url("../fonts/AvenirNextLTPro-Bold.woff"); }
 
-/* Sizes */
-/****AJUSTES GENERALES****/
-body {
-  font-size: 62.5%;
-  font-family: 'Josefin Sans', sans-serif;
-  overflow-x: hidden; }
+@media screen and (max-height: 900px) {
+  .intro .text-intro {
+    margin-top: 7vh; } }
 
-html,
-body,
-ul,
-ol,
-a,
-div,
-section,
-article {
-  margin: 0;
-  padding: 0; }
-  html img,
-  body img,
-  ul img,
-  ol img,
-  a img,
-  div img,
-  section img,
-  article img {
-    border: none;
-    display: block; }
-
-button,
-button:focus {
-  outline: 0; }
-
-section {
-  width: 100%;
-  float: left;
-  clear: left; }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /****MENU****/
+  .intro-wrapper {
+    position: initial; }
+  /**** GENERAL ****/
   section h1 {
-    font-size: 40px;
-    font-weight: 400; }
-  section h2 {
-    font-size: 30px;
-    font-weight: 400; }
-  section h3 {
-    font-size: 24px;
-    font-weight: 400; }
-  section article h1 {
-    font-size: 36px; }
-
-.intro-wrapper,
-.wrapper {
-  max-width: 1680px;
-  margin: 0 auto;
-  width: 96%;
-  overflow: hidden;
-  position: relative;
-  z-index: 2; }
-
-.intro-wrapper {
-  z-index: 3; }
-
-/****MENU NAVEGACION****/
-nav.main-menu {
-  position: fixed;
-  top: 30px;
-  right: 30px;
-  z-index: 3; }
-  nav.main-menu ul {
-    display: none; }
-  nav.main-menu button {
-    font-family: "FontTitles";
-    font-size: 1.6em;
-    border: none;
-    padding: 8px 20px;
-    cursor: pointer; }
-  nav.main-menu .intro-button {
-    border: none;
-    background-color: transparent;
-    color: #fceca9; }
-  nav.main-menu .about-me-button {
-    border-radius: 100px;
-    background-color: #c13948;
-    color: #fceca9;
-    box-shadow: 0 0 6px 1px #b19c47; }
-  nav.main-menu .services-button {
-    border-radius: 100px;
-    background-color: #ea5c67;
-    color: #f9d1c9;
-    box-shadow: 0 0 6px 1px #d26169; }
-  nav.main-menu .projects-button {
-    border-radius: 100px;
-    background-color: #f9d1c9;
-    color: #6fbcbe;
-    box-shadow: 0 0 6px 1px #498a8b; }
-  nav.main-menu .contact-button {
-    border-radius: 100px;
-    background-color: #fceca9;
-    color: #6fbcbe;
-    box-shadow: 0 0 6px 1px #7aa5a5; }
-
-/****PORTADA****/
-.avatar {
-  position: absolute;
-  z-index: 2;
-  top: 5%;
-  right: 8%; }
-
-.clouds {
-  width: 100%;
-  top: 0;
-  left: 0; }
-  .clouds img {
-    position: absolute;
-    z-index: 0; }
-
-.cloud1 {
-  top: 5%;
-  left: 2%; }
-
-.cloud2 {
-  top: 9%;
-  right: 14%; }
-
-.cloud3 {
-  top: 42%;
-  left: 13%; }
-
-.cloud4 {
-  top: 39%;
-  right: -6%; }
-
-.cloud5 {
-  top: 61%;
-  right: 20%; }
-
-.cloud6 {
-  bottom: 9%;
-  left: -4%; }
-
-.cloud7 {
-  bottom: 5%;
-  right: 5%; }
-
-.arrows {
-  position: absolute;
-  z-index: 2;
-  bottom: 4%;
-  right: 49%; }
-
-/****SOBRE MI - ILUSTRACIONES****/
-.cloud1-b {
-  top: 8%;
-  left: 50%; }
-
-.cloud2-b {
-  top: 15%;
-  left: 2%; }
-
-.cloud3-b {
-  top: 30%;
-  right: -3%; }
-
-.cloud4-b {
-  top: 47%;
-  left: 15%; }
-
-.cloud5-b {
-  top: 58%;
-  right: 18%; }
-
-.molino {
-  width: 34%;
-  position: absolute;
-  z-index: 2;
-  bottom: -4%;
-  left: 0%; }
-
-.cow {
-  position: absolute;
-  z-index: 2;
-  bottom: -4%;
-  right: 0; }
-
-/****SERVICIOS ILUSTRACIONES****/
-.cloud1-c {
-  top: 3%;
-  left: 15%; }
-
-.cloud2-c {
-  top: 10%;
-  right: 20%; }
-
-.cloud3-c {
-  top: 42%;
-  left: 0%; }
-
-.cloud4-c {
-  bottom: 12%;
-  right: 0%; }
-
-.cloud5-c {
-  bottom: 4%;
-  right: 44%; }
-
-/****PROJECTOS ILUSTRACIONES****/
-.jellyfish {
-  width: 100%;
-  top: 0;
-  left: 0; }
-  .jellyfish img {
-    position: absolute;
-    z-index: 0; }
-
-.jelly1 {
-  top: 4%;
-  left: 1%; }
-
-.jelly2 {
-  top: 52%;
-  right: 0%; }
-
-.jelly3 {
-  top: 99%;
-  left: 33%; }
-
-.jelly4 {
-  top: 120%;
-  left: 0%; }
-
-.jelly5 {
-  bottom: -75%;
-  right: 2%; }
-
-.jelly6 {
-  top: -114%;
-  left: 34%; }
-
-/****CONTACTO****/
-.cloud1-d {
-  top: 6%;
-  left: 6%; }
-
-.cloud2-d {
-  top: 6%;
-  right: 10%; }
-
-.cloud3-d {
-  top: 28%;
-  left: 0%; }
-
-.cloud4-d {
-  bottom: 50%;
-  right: 2%; }
-
-.cloud5-d {
-  bottom: 46%;
-  left: 14%; }
-
-.cloud6-d {
-  bottom: 24%;
-  right: 17%; }
-
-/**** Tablet & Ipad ****/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    font-size: 3em; }
   /****INTRODUCCIÓN****/
   .intro {
     height: 100vh; }
@@ -277,30 +25,19 @@ nav.main-menu {
         left: 17%; }
     .intro h1 {
       width: 500px;
-      margin: 30px auto 0;
       padding-bottom: 50px;
       line-height: 1.4em;
-      font-size: 7.4em;
-      text-align: center;
-      color: #fceca9;
-      z-index: 1; }
+      font-size: 7.4em; }
     .intro h2 {
       width: 600px;
       margin: 50px auto 0;
       line-height: 1.6em;
-      font-size: 6em;
-      font-family: "FontTitles";
-      text-align: center;
-      color: #fceca9;
-      z-index: 1; }
+      font-size: 6em; }
     .intro h3 {
-      width: 100px;
       font-size: 2em;
-      color: #fceca9;
-      z-index: 1;
-      text-align: center;
-      margin: 50px auto 0;
-      font-weight: 300; }
+      margin: 50px auto 0; }
+  .jellyfish img {
+    width: 12%; }
   .avatar {
     width: 28%;
     position: absolute;
@@ -339,7 +76,76 @@ nav.main-menu {
   .cow {
     position: absolute;
     z-index: 2;
-    bottom: -4%;
-    right: -21%; } }
+    bottom: -3%;
+    right: -21%;
+    width: 55%; }
+  .about-me button {
+    margin-top: 40px; }
+  /****SERVICIOS****/
+  .services h2 {
+    font-size: 1.8em; }
+  .services article {
+    margin-right: 0;
+    padding: 0 15px;
+    width: 25%;
+    box-sizing: border-box; }
+    .services article img {
+      width: 65%; }
+  .sea .faro {
+    width: 42%;
+    top: -26%; }
+  .sea .llaut {
+    width: 26%;
+    right: 6%; }
+  .sea .roca-fondo {
+    width: 12%;
+    top: -8%; }
+  /****PROYECTOS****/
+  .projects ul.menu-projects li {
+    width: 16.6%; }
+    .projects ul.menu-projects li a {
+      width: 100px;
+      padding: 7px 0 5px 0; }
+  .projects .projects-list ul li article .project-review h1 {
+    font-size: 2em; }
+  .projects .projects-list ul li article .project-review button {
+    font-size: 1.6em;
+    padding: 7px 3px;
+    width: 80px;
+    font-weight: bold; }
+  .projects .projects-list .project-detail .project-content {
+    min-height: 414px; }
+  .projects .projects-list .project-detail .title {
+    font-size: 2.4em; }
+  .projects .projects-list .project-detail a.close img {
+    width: 24px; }
+  .projects .projects-list .project-detail .description p {
+    font-size: 1.7em; }
+  .projects .projects-list .project-detail .description p.categories {
+    font-size: 1.6em; }
+  .projects .projects-list .project-detail .gallery img {
+    margin-right: 22px; }
+  .contact h1 {
+    margin-bottom: 0;
+    padding-bottom: 0; }
+  .contact .final .sentada {
+    right: 1%;
+    width: 18%;
+    bottom: 75px; }
+  .contact .final .xopi {
+    width: 35%;
+    left: -6%;
+    bottom: 111px; }
+  .contact .final .social {
+    left: 1%; } }
+
+/**** Tablet & Ipad ****/
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .intro .text-intro {
+    margin-top: 2vh; }
+  .contact .final .sentada {
+    bottom: 60px; }
+  .contact .final .xopi {
+    bottom: 100px; } }
 
 /**** Mobile ****/

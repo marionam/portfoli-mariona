@@ -1,15 +1,27 @@
 @import 'partials/colors';
 @import 'partials/fonts';
-@import 'partials/layout';
 
-/**** Tablet & Ipad ****/
+@media screen and (max-height: 900px) {
+    .intro {
+        .text-intro {
+            margin-top: 7vh;
+        }
+    }
+}
 
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
-  {
+    /****MENU****/
 
+    .intro-wrapper {
+        position: initial;
+    }
+
+    /**** GENERAL ****/
+
+    section h1 {
+        font-size: 3em;
+    }
 
   	/****INTRODUCCIÓN****/
 
@@ -17,52 +29,38 @@
 		height: 100vh;
 
 	 		.text-intro {
-       		height: 100vh;
-      		 margin-top: 20vh;
+                height: 100vh;
+                margin-top: 20vh;
 
-      		.linea {
-   				left: 17%;
-   			}
+                .linea {
+                    left: 17%;
+                }
+            }
 
-   			}
-
-   			
-   			h1{
-
-			width: 500px;
-			margin: 30px auto 0;
-			padding-bottom: 50px;
-			line-height: 1.4em;
-			font-size: 7.4em;
-			text-align: center;
-			color: $yellow-color;
-			z-index: 1;
-
+   			h1 {
+                width: 500px;
+                padding-bottom: 50px;
+                line-height: 1.4em;
+                font-size: 7.4em;
 			}
 
 			h2 {
-
 				width: 600px;
 				margin: 50px auto 0;
 				line-height: 1.6em;
 				font-size: 6em;
-				font-family: "FontTitles";
-				text-align: center;
-				color: $yellow-color;
-				z-index: 1;
 			}
 
 			h3 {
-				width: 100px;
 				font-size: 2em;
-				color: $yellow-color;
-				z-index: 1;
-				text-align: center;
 				margin: 50px auto 0;
-				font-weight: 300;
 			}
 
   	}
+
+    .jellyfish img {
+        width: 12%;
+    }
 
   	.avatar {
 		width: 28%;
@@ -76,7 +74,7 @@
 
 		width: 25%;
 	}
-	
+
 		.cloud1 {
 			top: 6%;
 			left: 48%;
@@ -97,7 +95,7 @@
 		.cloud4 {
 			top: 53%;
 			right: -10%;
-			
+
 		}
 
 		.cloud5 {
@@ -134,21 +132,184 @@
 
 			position: absolute;
 			z-index: 2;
-			bottom: -4%;
+			bottom: -3%;
 			right: -21%;
+            width: 55%;
 
 		}
 
 
+        .about-me {
+
+            button {
+                margin-top: 40px;
+            }
+        }
+
+
+    /****SERVICIOS****/
+
+        .services {
+            h2 {
+                font-size: 1.8em;
+            }
+
+            article {
+
+                margin-right: 0;
+                padding: 0 15px;
+                width: 25%;
+                box-sizing: border-box;
+
+                img {
+                    width: 65%;
+                }
+            }
+        }
+
+        .sea {
+            .faro {
+                width: 42%;
+                top: -26%;
+            }
+            .llaut {
+                width: 26%;
+                right: 6%;
+            }
+            .roca-fondo {
+                width: 12%;
+                top: -8%;
+            }
+        }
+
+    /****PROYECTOS****/
+    .projects {
+
+        ul.menu-projects {
+
+            li {
+                width: 16.6%;
+
+                a {
+                    width: 100px;
+                    padding: 7px 0 5px 0;
+                }
+            }
+        }
+
+        .projects-list {
+            ul {
+                li {
+                    article {
+                        .project-review {
+                            h1 {
+                                font-size: 2em;
+                            }
+
+                            button {
+                                font-size: 1.6em;
+                                padding: 7px 3px;
+                                width: 80px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .project-detail {
+
+                .project-content {
+                    min-height: 414px;
+                }
+
+                .title {
+                    font-size: 2.4em;
+                }
+
+                a.close {
+
+                    img {
+                        width: 24px;
+                    }
+                }
+
+                .description {
+
+                    p {
+                        font-size: 1.7em;
+                    }
+
+                    p.categories {
+                        font-size: 1.6em;
+                    }
+                }
+
+                .gallery {
+
+                    img {
+                        margin-right: 22px;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact {
+
+        h1 {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .final {
+
+            .sentada {
+                right: 1%;
+                width: 18%;
+                bottom: 75px;
+            }
+
+            .xopi {
+                width: 35%;
+                left: -6%;
+                bottom: 111px;
+            }
+
+            .social {
+                left: 1%
+            }
+        }
+    }
 }
 
 
+/**** Tablet & Ipad ****/
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .intro {
+        .text-intro {
+            margin-top: 2vh;
+        }
+    }
+
+    .contact {
+
+        .final {
+
+            .sentada {
+                bottom: 60px;
+            }
+
+            .xopi {
+                bottom: 100px;
+            }
+        }
+    }
+}
 
 /**** Mobile ****/
 
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 640px)
+@media screen and (max-device-width: 768px)
 
   {
 
