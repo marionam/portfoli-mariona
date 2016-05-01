@@ -1,5 +1,7 @@
+var _lastCompleted = true;
 var defaultButtonClass;
 var defaultProjectsSectionHeight;
+var currentImage = 1;
 
 $(document).ready(function(){
     // Init resize Intro Section
@@ -48,6 +50,7 @@ function parallaxScroll() {
 }
 
 function hideDetailProject() {
+    $(".projects-list article").css("visibility", "");
     $(".projects-list .project-detail").hide();
     $("section.projects .wrapper").height(defaultProjectsSectionHeight);
 }
@@ -87,6 +90,57 @@ function initProjectListSection() {
         });
     }
 
+    function initProjectImageMobileGallery() {
+        function _moveLeft() {
+            if( _lastCompleted && currentImage < $(".projects-list .project-detail .main img").length ) {
+                _lastCompleted = false;
+                var mainLeft = $(".projects-list .project-detail .main").position().left;
+                var moveTo = mainLeft - $(window).width();
+                $(".projects-list .project-detail .main").animate(
+                    {
+                        left: moveTo
+                    },
+                    {
+                        duration: 400,
+                        easing: "swing",
+                        complete: function() {
+                            currentImage++;
+                            _lastCompleted = true;
+                        }
+                    }
+                );
+            }
+        }
+        function _moveRight() {
+            if( _lastCompleted && currentImage > 1 ) {
+                _lastCompleted = false;
+                var mainLeft = $(".projects-list .project-detail .main").position().left;
+                var moveTo = mainLeft + $(window).width();
+                $(".projects-list .project-detail .main").animate(
+                    {
+                        left: moveTo
+                    },
+                    {
+                        duration: 400,
+                        easing: "swing",
+                        complete: function() {
+                            currentImage--;
+                            _lastCompleted = true;
+                        }
+                    }
+                );
+            }
+        }
+        $(document).on('swipeleft', function(e) {
+            if( _lastCompleted )
+                _moveLeft();
+        });
+        $(document).on('swiperight', function(e) {
+            if( _lastCompleted )
+                _moveRight();
+        });
+    }
+
     $(".projects-list li button").click(function(e) {
         try {
             var liParent = $(this).parent().parent().parent();
@@ -107,36 +161,67 @@ function initProjectListSection() {
                 +
                 projects[projectId].description
             );
-            var newTop = liParent.position().top + liParent.height();
-            var newLeft = liParent.parent().position().left;
-            $(".projects-list .project-detail").css("top", newTop + 40);
-            $(".projects-list .project-detail").css("left", newLeft);
-            // Images gallery
-            var isMain = true;
+
+            currentImage = 1;
+            $(".project-detail .main").css("left", 0);
+
             $(".projects-list .project-detail .main").html("");
             $(".projects-list .project-detail .gallery").html("");
-            var images = projects[projectId].images;
-            _.each(images, function(image, i) {
-                var img = $('<img src="" />');
-                img.attr("src", image);
-                if( isMain ) {
-                    var mainImg = $('<img src="" />');
-                    mainImg.attr("src", image);
-                    $(".projects-list .project-detail .main").append(mainImg);
-                }
-                if( images.length-1 == i )
-                    img.addClass("last");
-                $(".projects-list .project-detail .gallery").append(img);
-                isMain = false;
-            });
-            var menuProjectsTop = $(".menu-projects").position().top
-            var detailHeight = $(".projects-list .project-detail").height();
-            console.log(detailHeight);
-            console.log(newTop + detailHeight);
-            $("section.projects .wrapper").css("height", 150 + menuProjectsTop + newTop + detailHeight);
-            $(".projects-list .project-detail").show();
 
-            initProjectImageGallery();
+            // Mobile
+            if( $(window).width() < 768 ) {
+                $(this).parent().parent().css("visibility", "hidden");
+                var newTop = liParent.position().top;
+                $(".projects-list .project-detail").css("top", newTop);
+                $(".projects-list .project-detail").css("left", 0);
+
+                var images = projects[projectId].images;
+                _.each(images, function(image, i) {
+                    var img = $('<img src="" />');
+                    img.attr("src", image);
+                    img.css("width",$(window).width());
+                    $(".projects-list .project-detail .main").append(img);
+                    if( images.length-1 == i )
+                        img.addClass("last");
+                });
+                var menuProjectsTop = $(".menu-projects").position().top;
+                var imageHeight = (625/*original height*/ / 488/*original width*/) * $(window).width();
+                $(".projects-list .project-detail .project-content").css("top", imageHeight);
+                $(".projects-list .project-detail").show();
+                var detailHeight = $(".projects-list .project-detail .project-content").height();
+                $("section.projects .wrapper").css("height", 150 + menuProjectsTop + newTop + imageHeight + detailHeight);
+                initProjectImageMobileGallery();
+            }
+            // Desktop
+            else {
+                var newTop = liParent.position().top + liParent.height();
+                var newLeft = liParent.parent().position().left;
+                $(".projects-list .project-detail").css("top", newTop + 40);
+                $(".projects-list .project-detail").css("left", newLeft);
+
+                // Images gallery
+                var isMain = true;
+                var images = projects[projectId].images;
+                _.each(images, function(image, i) {
+                    var img = $('<img src="" />');
+                    img.attr("src", image);
+                    if( isMain ) {
+                        var mainImg = $('<img src="" />');
+                        mainImg.attr("src", image);
+                        $(".projects-list .project-detail .main").append(mainImg);
+                    }
+                    if( images.length-1 == i )
+                        img.addClass("last");
+                    $(".projects-list .project-detail .gallery").append(img);
+                    isMain = false;
+                });
+                var menuProjectsTop = $(".menu-projects").position().top;
+                var detailHeight = $(".projects-list .project-detail").height();
+                $("section.projects .wrapper").css("height", 150 + menuProjectsTop + newTop + detailHeight);
+                $(".projects-list .project-detail").show();
+
+                initProjectImageGallery();
+            }
         } catch(e) {
             alert(e);
         }

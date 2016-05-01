@@ -79,7 +79,63 @@ nav.main-menu {
 
 	ul {
 		display: none;
+		max-width: 152px;
+        width: 100%;
+  		border-radius: 8px;
+  		background-color: rgba(25, 21, 22, 0.89);
+  		margin-top: 50px;
+  		padding: 30px 30px 0 30px;
+  		font-family: "FontTitles";
+
+  		li {
+  			list-style: none;
+  			color: white;
+  			font-size: 1.8em;
+  			text-transform: uppercase;
+  			width: 100%;
+            display: inline-block;
+  			font-weight: 600;
+            margin-bottom: 30px;
+
+  			a {
+  				border-radius: 100px;
+                border-width: 2px;
+                border-style: solid;
+                padding: 10px;
+                text-decoration: none;
+                max-width: 132px;
+                display: block;
+                text-align: center;
+  			}
+
+  			&.home-m a {
+                border-color: $red-color;
+                color: $red-color;
+  			}
+
+  			&.about-m a {
+                border-color: $yellow-color;
+                color: $yellow-color;
+  			}
+
+  			&.services-m a {
+                border-color: $pink-color;
+                color: $pink-color;
+  			}
+
+  			&.projects-m a {
+                border-color: $dark-blue-color;
+                color: $dark-blue-color;
+  			}
+
+  			&.contact-m a {
+                border-color: $light-blue-color;
+                color: $light-blue-color;
+  			}
+  		}
+
 	}
+
 
 	button {
 		font-family: "FontTitles";
@@ -87,12 +143,15 @@ nav.main-menu {
 		border: none;
 		padding: 8px 20px;
 		cursor: pointer;
+		float: right;
+
 	}
 
 	.intro-button {
 		border: none;
 		background-color: transparent;
 		color: $yellow-color;
+
 	}
 
 	.about-me-button {

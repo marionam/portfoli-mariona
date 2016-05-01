@@ -71,13 +71,54 @@ nav.main-menu {
   right: 30px;
   z-index: 3; }
   nav.main-menu ul {
-    display: none; }
+    display: none;
+    max-width: 152px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgba(25, 21, 22, 0.89);
+    margin-top: 50px;
+    padding: 30px 30px 0 30px;
+    font-family: "FontTitles"; }
+    nav.main-menu ul li {
+      list-style: none;
+      color: white;
+      font-size: 1.8em;
+      text-transform: uppercase;
+      width: 100%;
+      display: inline-block;
+      font-weight: 600;
+      margin-bottom: 30px; }
+      nav.main-menu ul li a {
+        border-radius: 100px;
+        border-width: 2px;
+        border-style: solid;
+        padding: 10px;
+        text-decoration: none;
+        max-width: 132px;
+        display: block;
+        text-align: center; }
+      nav.main-menu ul li.home-m a {
+        border-color: #c13948;
+        color: #c13948; }
+      nav.main-menu ul li.about-m a {
+        border-color: #fceca9;
+        color: #fceca9; }
+      nav.main-menu ul li.services-m a {
+        border-color: #f9d1c9;
+        color: #f9d1c9; }
+      nav.main-menu ul li.projects-m a {
+        border-color: #6fbcbe;
+        color: #6fbcbe; }
+      nav.main-menu ul li.contact-m a {
+        border-color: #add9d9;
+        color: #add9d9; }
   nav.main-menu button {
     font-family: "FontTitles";
     font-size: 1.6em;
     border: none;
     padding: 8px 20px;
-    cursor: pointer; }
+    cursor: pointer;
+    float: right; }
   nav.main-menu .intro-button {
     border: none;
     background-color: transparent;

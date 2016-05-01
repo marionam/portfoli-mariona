@@ -21,8 +21,6 @@
     .intro .text-intro {
       height: 100vh;
       margin-top: 20vh; }
-      .intro .text-intro .linea {
-        left: 17%; }
     .intro h1 {
       width: 500px;
       padding-bottom: 50px;
@@ -36,8 +34,6 @@
     .intro h3 {
       font-size: 2em;
       margin: 50px auto 0; }
-  .jellyfish img {
-    width: 12%; }
   .avatar {
     width: 28%;
     position: absolute;
@@ -45,7 +41,7 @@
     top: 22%;
     right: 2%; }
   .clouds img {
-    width: 25%; }
+    width: 20%; }
   .cloud1 {
     top: 6%;
     left: 48%; }
@@ -81,6 +77,21 @@
     width: 55%; }
   .about-me button {
     margin-top: 40px; }
+  .cloud1-b {
+    top: 7%;
+    left: 50%; }
+  .cloud2-b {
+    top: 16%;
+    left: 3%; }
+  .cloud3-b {
+    top: 30%;
+    right: -3%; }
+  .cloud4-b {
+    top: 47%;
+    left: -5%; }
+  .cloud5-b {
+    top: 66%;
+    right: 4%; }
   /****SERVICIOS****/
   .services h2 {
     font-size: 1.8em; }
@@ -100,6 +111,21 @@
   .sea .roca-fondo {
     width: 12%;
     top: -8%; }
+  .cloud1-c {
+    top: 18%;
+    left: 6%; }
+  .cloud2-c {
+    top: 15%;
+    right: 6%; }
+  .cloud3-c {
+    top: 55%;
+    left: -10%; }
+  .cloud4-c {
+    bottom: 12%;
+    right: -8%; }
+  .cloud5-c {
+    bottom: 4%;
+    left: 35%; }
   /****PROYECTOS****/
   .projects ul.menu-projects li {
     width: 16.6%; }
@@ -125,6 +151,27 @@
     font-size: 1.6em; }
   .projects .projects-list .project-detail .gallery img {
     margin-right: 22px; }
+  .jellyfish img {
+    width: 12%; }
+  .jelly1 {
+    top: 8%;
+    left: 8%; }
+  .jelly2 {
+    top: 42%;
+    right: 0%; }
+  .jelly3 {
+    top: 80%;
+    left: 25%; }
+  .jelly4 {
+    top: 120%;
+    left: 60%; }
+  .jelly5 {
+    bottom: -75%;
+    right: 8%; }
+  .jelly6 {
+    top: -134%;
+    left: 34%; }
+  /****CONTACTO****/
   .contact h1 {
     margin-bottom: 0;
     padding-bottom: 0; }
@@ -139,6 +186,30 @@
   .contact .final .social {
     left: 1%; } }
 
+.cloud1-d {
+  top: 6%;
+  left: 6%; }
+
+.cloud2-d {
+  top: 4%;
+  right: 10%; }
+
+.cloud3-d {
+  top: 29%;
+  left: -2%; }
+
+.cloud4-d {
+  bottom: 55%;
+  right: 1%; }
+
+.cloud5-d {
+  bottom: 46%;
+  left: 5%; }
+
+.cloud6-d {
+  bottom: 25%;
+  right: 10%; }
+
 /**** Tablet & Ipad ****/
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .intro .text-intro {
@@ -149,3 +220,208 @@
     bottom: 100px; } }
 
 /**** Mobile ****/
+@media screen and (max-device-width: 767px) {
+  /****MENU****/
+  .intro-wrapper {
+    position: initial; }
+  nav.main-menu {
+    top: 20px;
+    right: 10px; }
+  .wrapper {
+    width: 79%; }
+  section h1 {
+    font-size: 2.6em;
+    margin-bottom: 0;
+    margin-top: 65px; }
+  /****INTRODUCCIO*****/
+  .intro .wrapper {
+    width: 90%; }
+  .intro .text-intro {
+    margin-top: 13vh; }
+    .intro .text-intro .linea {
+      width: 65%; }
+  .intro h1 {
+    width: 100%;
+    padding-bottom: 30px;
+    line-height: 1.4em;
+    font-size: 4em; }
+  .intro h2 {
+    width: 100%;
+    margin: 30px auto 0;
+    line-height: 1.6em;
+    font-size: 3.5em; }
+  .intro h3 {
+    font-size: 2em;
+    margin: 60px auto 0; }
+  .avatar {
+    display: none; }
+  .clouds img {
+    width: 25%; }
+  .cloud1 {
+    top: 3%;
+    left: 50%; }
+  .cloud2 {
+    top: 23%;
+    left: -10%; }
+  .cloud3 {
+    top: 50%;
+    left: 2%; }
+  .cloud4 {
+    top: 40%;
+    right: -5%; }
+  .cloud5 {
+    display: none; }
+  .cloud6 {
+    bottom: 15%;
+    left: 2%; }
+  .cloud7 {
+    bottom: 5%;
+    right: 5%; }
+  /****SOBRE MI****/
+  .molino {
+    width: 20%;
+    position: absolute;
+    z-index: 2;
+    bottom: -3%;
+    left: 0%; }
+  .cow {
+    position: absolute;
+    z-index: 2;
+    bottom: -3%;
+    right: -21%;
+    width: 30%; }
+  .about-me {
+    overflow-x: hidden;
+    height: auto;
+    padding-bottom: 250px; }
+    .about-me h1 {
+      margin-top: 65px; }
+    .about-me p {
+      font-size: 1.8em; }
+    .about-me button {
+      margin-top: 40px;
+      width: 75%;
+      font-size: 18px;
+      height: auto;
+      padding: 7px 5px; }
+    .about-me .molino {
+      width: 55%;
+      bottom: -1%; }
+    .about-me .cow {
+      width: 67%;
+      bottom: 7%; }
+  .cloud1-b {
+    top: 7%;
+    left: 50%; }
+  .cloud2-b {
+    top: 16%;
+    left: 3%; }
+  .cloud3-b {
+    top: 30%;
+    right: -3%; }
+  .cloud4-b {
+    top: 47%;
+    left: -5%; }
+  .cloud5-b {
+    top: 66%;
+    right: 4%; }
+  /****SERVICIOS****/
+  .services h1 {
+    margin-top: 65px; }
+  .services .wrapper {
+    padding-bottom: 100px; }
+  .services article {
+    width: 100%;
+    margin-bottom: 20px; }
+    .services article h2 {
+      font-size: 1.8em; }
+    .services article img {
+      width: 40%; }
+  .sea {
+    width: 100%;
+    min-height: 215px; }
+    .sea .roca-fondo {
+      width: 25%;
+      top: -13%; }
+    .sea .faro {
+      width: 76%;
+      left: 12%;
+      top: -30%; }
+    .sea .llaut {
+      display: none; }
+    .sea .roca-delante {
+      width: 35%;
+      bottom: -9%;
+      right: -12%; }
+  /****PROYECTOS****/
+  .projects h1 {
+    margin-top: 65px; }
+  .projects .jellyfish {
+    display: none; }
+  .projects .wrapper {
+    width: 100%; }
+  .projects ul.menu-projects {
+    width: 90%;
+    margin-left: 5%; }
+    .projects ul.menu-projects li {
+      width: 30.8%;
+      margin-right: 3%;
+      margin-bottom: 15px; }
+      .projects ul.menu-projects li:nth-child(3) {
+        margin-right: 0; }
+      .projects ul.menu-projects li:nth-child(6) {
+        margin-right: 0; }
+      .projects ul.menu-projects li a {
+        width: 100%;
+        font-size: 1.8em; }
+  .projects .projects-list ul li {
+    width: 100%; }
+    .projects .projects-list ul li article {
+      border: none;
+      width: 100%; }
+      .projects .projects-list ul li article,
+      .projects .projects-list ul li article img,
+      .projects .projects-list ul li article .project-review {
+        max-width: initial;
+        max-height: initial; }
+  .projects .projects-list .project-detail {
+    width: 100%;
+    border: none;
+    padding: 0;
+    min-height: 1000px; }
+    .projects .projects-list .project-detail .main {
+      width: 2000px;
+      position: absolute;
+      left: 0;
+      float: none; }
+      .projects .projects-list .project-detail .main img {
+        width: 100%;
+        float: left; }
+    .projects .projects-list .project-detail .project-content {
+      width: 100%;
+      padding: 10px 6%;
+      background-color: #338c8f;
+      position: absolute;
+      box-sizing: border-box; }
+  /****CONTACT****/
+  .contact {
+    background: #add9d9 url(../img/portfolio-mariona-mercadal-footer.png) no-repeat 10% bottom; }
+    .contact h1 {
+      margin-top: 40px; }
+    .contact form {
+      width: 100%; }
+      .contact form input,
+      .contact form textarea {
+        width: 93%; }
+    .contact .sentada {
+      display: none; }
+    .contact .final .social {
+      width: 100%; }
+    .contact .final .social,
+    .contact .final .xopi {
+      left: 7.7%; } }
+
+@media screen and (max-device-width: 320px) {
+  .contact .final .social,
+  .contact .final .xopi {
+    left: .7%; } }
