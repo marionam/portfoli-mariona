@@ -71,6 +71,10 @@ z-index: 2;
    top: 0;
    right: 0;
    height: 70%;
+   &.closed {
+       height: 80px;
+       width: 130px;
+   }
 }
 
 /****MENU NAVEGACION****/

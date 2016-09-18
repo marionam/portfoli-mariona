@@ -68,6 +68,9 @@ section {
   top: 0;
   right: 0;
   height: 70%; }
+  .intro-wrapper.closed {
+    height: 80px;
+    width: 130px; }
 
 /****MENU NAVEGACION****/
 nav.main-menu {

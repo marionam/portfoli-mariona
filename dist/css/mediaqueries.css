@@ -10,7 +10,8 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   /****MENU****/
-  .intro-wrapper {
+  .intro-wrapper,
+  .intro-wrapper.closed {
     position: initial;
     height: auto;
     width: auto; }
@@ -224,7 +225,8 @@
 /**** Mobile ****/
 @media screen and (max-device-width: 767px) {
   /****MENU****/
-  .intro-wrapper {
+  .intro-wrapper,
+  .intro-wrapper.closed {
     position: initial;
     height: auto;
     width: auto; }

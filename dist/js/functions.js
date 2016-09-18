@@ -282,7 +282,13 @@ function initContactForm() {
 }
 
 function toggleMenu($this) {
-    $this.parent().find("ul").toggle();
+    var $ul = $this.parent().find("ul");
+    if( $ul.css("display") == "block" ) {
+        $(".intro-wrapper").addClass("closed");
+    } else {
+        $(".intro-wrapper").removeClass("closed");
+    }
+    $ul.toggle();
 }
 
 function initMainMenu() {

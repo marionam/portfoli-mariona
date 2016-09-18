@@ -13,7 +13,8 @@
 
     /****MENU****/
 
-    .intro-wrapper {
+    .intro-wrapper,
+    .intro-wrapper.closed {
         position: initial;
         height: auto;
         width: auto;
@@ -442,7 +443,8 @@
 
     /****MENU****/
 
-    .intro-wrapper {
+    .intro-wrapper,
+    .intro-wrapper.closed {
         position: initial;
         height: auto;
         width: auto;
