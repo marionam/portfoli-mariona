@@ -354,7 +354,7 @@ nav.main-menu {
       display: block;
       border-radius: 90px;
       border: none;
-      color: #add9d9;
+      color: #1f6565;
       padding: 10px 5px;
       font-size: 1.8em;
       font-family: 'Josefin Sans', 'Sans serif';
@@ -362,7 +362,7 @@ nav.main-menu {
       cursor: pointer;
       font-weight: 800; }
       .projects .projects-list ul li .project-review button:hover {
-        color: #fff;
+        color: #1f6565;
         background-color: #add9d9; }
   .projects .projects-list ul li.selected .project-review,
   .projects .projects-list ul li.selected .overlay {

@@ -41,6 +41,12 @@ gulp.task("sass_media", function() {
 		.pipe(gulp.dest("dist/css"));
 });
 
+// Task to copy css from src dir to dist dir
+gulp.task("css", function(){
+	return gulp.src("src/scss/*.css")
+	.pipe(gulp.dest("dist/css"));
+});
+
 // Task to copy html from src dir to dist dir
 gulp.task("html", function(){
 	return gulp.src("src/*.html")
@@ -68,7 +74,7 @@ gulp.task('imageMin', function(){
 
 
 // Watch
-gulp.task('default', ["sass", "sass_media", "html", "js"], function() {
+gulp.task('default', ["sass", "sass_media", "html","css", "js"], function() {
   browserSync.init({
     server: {
         baseDir: "dist"
@@ -78,6 +84,7 @@ gulp.task('default', ["sass", "sass_media", "html", "js"], function() {
   gulp.watch("src/scss/mediaqueries.scss", ["sass_media"]);
   gulp.watch("src/*.html", ["html"]);
   gulp.watch("src/js/*.js", ["js"]);
+  gulp.watch("src/scss/*.css", ["css"]);
   gulp.watch("src/img/*", ["imageMin"]);
   gulp.watch("dist/*.html").on("change", browserSync.reload);
 });
