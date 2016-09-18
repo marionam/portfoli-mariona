@@ -17,5 +17,10 @@ $.fn.extend({
         });
     }
 });
+/*$('.intro img.arrows').mouseenter(function() {
+    $('.intro img.arrows').animateCss('descubremeMove');
+}).mouseleave(function(){
+    $('.intro img.arrows').animateCss('descubremeMove');
+});*/
 $('.intro img.avatar').animateCss('avatarMove');
 $('.services img.llaut').animateCss('llautMove');

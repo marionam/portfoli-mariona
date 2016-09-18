@@ -11,7 +11,9 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   /****MENU****/
   .intro-wrapper {
-    position: initial; }
+    position: initial;
+    height: auto;
+    width: auto; }
   /**** GENERAL ****/
   section h1 {
     font-size: 3em; }
@@ -223,7 +225,9 @@
 @media screen and (max-device-width: 767px) {
   /****MENU****/
   .intro-wrapper {
-    position: initial; }
+    position: initial;
+    height: auto;
+    width: auto; }
   nav.main-menu {
     top: 20px;
     right: 10px; }

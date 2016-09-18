@@ -16,7 +16,7 @@ var projects = {
             'img/portfolio-mariona-mercadal-project-gallo-detalle-grande.png',
             'img/portfolio-mariona-mercadal-project-gall-detalle-petit.png',
             'img/portfolio-mariona-mercadal-project-gallo-detalle-petit-2.png',
-            
+
         ],
         description: "<p>Diseño del cartel y el folleto para la conocida Fira Avícola "+
                         "Raça Prat.</p><p>Para destacar la importancia de la raza de gallos del Prat, "+
@@ -49,7 +49,7 @@ var projects = {
             categories.ALL,
             categories.GRAPHIC,
             categories.WEB
-            
+
         ]
     },
     3: {
@@ -73,7 +73,7 @@ var projects = {
             categories.ALL,
             categories.GRAPHIC,
             categories.ILLUSTRATION
-           
+
         ]
     },
     4: {
@@ -87,7 +87,7 @@ var projects = {
         description: "<p>Diseño de un helado creativo no existente en el "+
                     "mercado actual. En este proyecto se desarrolla una línea de helados de "+
                     "carácter sexual, compuesto por un pene, una vagina y un pecho."+
-                    "</p><p>Dirigido a un público adulto, que satisfaga no "+ 
+                    "</p><p>Dirigido a un público adulto, que satisfaga no "+
                     "solo el placer de comerlo sino también de disfrutarlo solo o acompañado.</p>"+
                     "<p>El packaging también se creo añadiéndole un punto de "+
                     "erotismo y misterio al producto, revelando sutilmente a través del sabor "+
@@ -96,7 +96,7 @@ var projects = {
             categories.ALL,
             categories.GRAPHIC,
             categories.PACKAGING
-            
+
         ]
     },
     5: {
@@ -104,7 +104,7 @@ var projects = {
         images: [
             'img/portfolio-mariona-mercadal-project-ilustracion-detalle.png',
             'img/portfolio-mariona-mercadal-project-ilustracion-detalle-2.png'
-            
+
         ],
         description: "<p>Ilustración vectorial para regalo de despedida de viaje.</p><p>"+
                     "Basandome en unas fotografías de la pareja, realice unos primeros "+
@@ -113,7 +113,7 @@ var projects = {
         categories: [
             categories.ALL,
             categories.ILLUSTRATION
-            
+
         ]
     },
     6: {
@@ -126,7 +126,7 @@ var projects = {
         ],
         description: "<p>Rediseño de un packaging comprado en e bazar chino con el objetivo de revalorizar su contenido."+
                     "Con el nuevo diseño se pretende vender el móvil de juguete como una crítica al uso abusivo en "+
-                    "nuestra sociedad de los teléfonos móviles.</p><p>Para esto creo una identidad corporativa llamada “GLU”,"+ 
+                    "nuestra sociedad de los teléfonos móviles.</p><p>Para esto creo una identidad corporativa llamada “GLU”,"+
                     "basada en las burbujas del juguete. El pack se caracteriza por jugar con materiales reciclados como "+
                     "el cartón que contrasta con el material artificial del amarillo fluorescente.</p><p>El móvil va acompañado "+
                     "de un folleto que explica de manera cómica como utilizar este no-móvil.</p>",
@@ -136,7 +136,7 @@ var projects = {
             categories.ALL,
             categories.GRAPHIC,
             categories.PACKAGING
-            
+
         ]
     },
     7: {
@@ -168,7 +168,7 @@ var projects = {
             'img/portfolio-mariona-mercadal-project-som-detalle2.png',
             'img/portfolio-mariona-mercadal-project-som-detalle-3.png',
             'img/portfolio-mariona-mercadal-project-som-detalle-4.png'
-            
+
         ],
         description: "<p>Edición de una revista bilingüe (cat-eng) de carácter mensual, que "+
                         "pretende unir dos públicos, la sociedad menorquina y los miles de "+
@@ -191,7 +191,7 @@ var projects = {
             'img/portfolio-mariona-mercadal-project-libro-detalle-2.png',
             'img/portfolio-mariona-mercadal-project-libro-detalle-3.png',
             'img/portfolio-mariona-mercadal-project-libro-detalle-4.png'
-            
+
         ],
         description: "<p>Ilustraciones realizadas para puntos de "+
                         "libro, temática del cual eran los viajeros, exploradores y aventureros "+
@@ -209,13 +209,13 @@ var projects = {
             'img/portfolio-mariona-mercadal-flyer-elcove.png',
             'img/portfolio-mariona-mercadal-flyer-elcove2.png',
             'img/portfolio-mariona-mercadal-flyer-elcove3.png'
-            
+
         ],
         description: "<p>Creación del logotipo del proyecto El Cove, "+
                         "pequeña iniciativa para vender verduras y frutas de Km O. "+
                         "Por tal de promocionar sus cestas de verduras se ha creado el folleto "+
                         "en el cual a través de ilustraciones se muestra lo que venden y su filosofía.</p>"+
-                        "<p>Proyecto realizado en <a href=\"http://welovewebs.com\"> WeLoveWebs </a></p>",
+                        "<p>Proyecto realizado en <a target=\"_blank\" href=\"http://welovewebs.com\"> WeLoveWebs </a></p>",
         categories: [
             categories.ALL,
             categories.ILLUSTRATION,
@@ -229,14 +229,14 @@ var projects = {
         images: [
             'img/portfolio-mariona-mercadal-landing-hairshopeuropa.png',
             'img/portfolio-mariona-mercadal-landing-hairshopeuropa2.png'
-            
+
         ],
         description: "<p>Diseño de una landing web para una empresa de cuidados capilares.</p> "+
                         "<p>Esta landing representa un resumen de lo que podremos encontrar en la web principal, "+
                         "como el tipo de productos que se venden, lo más vendido, etc.</p> "+
                         "<p>En la estética se ha mantenido una concordancia con la web original por tal de que el usuario "+
                         "no se pierda, manteniendo los tonos azules y grises, pero buscando un aspecto más limpio y claro.</p>"+
-                        "<p>Proyecto realizado en <a href=\"http://welovewebs.com\"> WeLoveWebs </a></p>",
+                        "<p>Proyecto realizado en <a target=\"_blank\" href=\"http://welovewebs.com\"> WeLoveWebs </a></p>",
         categories: [
             categories.ALL,
             categories.WEB
@@ -249,13 +249,13 @@ var projects = {
             'img/portfolio-mariona-mercadal-web-omled.png',
             'img/portfolio-mariona-mercadal-web-omled2.png',
             'img/portfolio-mariona-mercadal-web-omled3.png'
-            
+
         ],
         description: "<p>Diseño de una web portafolio, y que a su vez tuviera acceso a otro site e-commerce. "+
                         "Los dos diseñados en la misma línea por tal de dar la sensación al usuario de continuar en la misma web.</p> "+
                         "<p>Se ha diseñado con menú vertical por tal de ofrecerle una mayor visibilidad a este, y con un masonry a su "+
                         "derecha destacando los apartados más importantes, el producto del mes o algún articulo destacado del blog.</p> "+
-                        "<p>Proyecto realizado en <a href=\"http://welovewebs.com\"> WeLoveWebs </a></p>",
+                        "<p>Proyecto realizado en <a target=\"_blank\" href=\"http://welovewebs.com\"> WeLoveWebs </a></p>",
         categories: [
             categories.ALL,
             categories.WEB
@@ -269,14 +269,14 @@ var projects = {
             'img/portfolio-mariona-mercadal-web-impares4.png',
             'img/portfolio-mariona-mercadal-web-impares5.png',
             'img/portfolio-mariona-mercadal-web-impares6.png'
-            
+
         ],
         description: "<p>Negocio online que ofrece al usuario múltiples soluciones a sus problemas en una relacion amorosa.</p> "+
                         "<p>El logotipo representa la infidelidad, la ruptura, dibujando esos engranajes del amor no acaban de girar.</p> "+
                         "<p>La web fue creada des de 0 (diseño y programación) con metodologías ágiles. Es totalmente responsive, adaptándose a múltiples "+
                         "dispositivos, y cada paso de compra esta basado en la experiencia del usuario. Coautores del proyecto: Natalia Camacho y Jordi Cutillas. "+
-                        "<p><a href=\"http://naxtrico.github.io/relaciones/dist/index.html\">Link a la web</a></p> ",
-                      
+                        "<p><a target=\"_blank\" href=\"http://naxtrico.github.io/relaciones/dist/index.html\">Link a la web</a></p> ",
+
         categories: [
             categories.ALL,
             categories.WEB,
@@ -289,8 +289,8 @@ var projects = {
         images: [
             'img/portfolio-mariona-mercadal-landing-extensiones-naturales2.png',
             'img/portfolio-mariona-mercadal-landing-extensiones-naturales3.png'
-           
-            
+
+
         ],
         description: "<p>E-commerce de venta de extensiones naturales. Es tanto una web de presentación de la marca, "+
                         "como una tienda donde adquirir productos.</p> "+
@@ -298,14 +298,14 @@ var projects = {
                         "como en experiencia de usuario, y se creo toda una estética (colores, tipos, maquetación...) "+
                         "en la cual el usuario pudiera ver las categorías de extensiones más fácilmente y navegar por "+
                         "ellas hasta encontrar el producto deseado en pocos clicks. </p> "+
-                        "<p>Proyecto realizado en <a href=\"http://welovewebs.com\"> WeLoveWebs </a></p>",
+                        "<p>Proyecto realizado en <a target=\"_blank\" href=\"http://welovewebs.com\"> WeLoveWebs </a></p>",
 
-                       
-                      
+
+
         categories: [
             categories.ALL,
             categories.WEB
-         
+
         ]
     },
 
@@ -315,8 +315,8 @@ var projects = {
             'img/portfolio-mariona-mercadal-web-moving1.png',
             'img/portfolio-mariona-mercadal-web-moving2.png',
             'img/portfolio-mariona-mercadal-web-moving3.png'
-           
-            
+
+
         ],
         description: "<p>Web responsive para negocio de traslados en Barcelona.</p> "+
                         "<p>Como podemos ver en las imágenes el site se ha realizado "+
@@ -325,14 +325,14 @@ var projects = {
                         "<p>La web ha sido creada pensando en el comportamiento de un usuario que quiera hacer "+
                         "un tipo de traslado en concreto (local, nacional, internacional, etc.), y "+
                         "dándole todas las facilidades con un formulario y un numero de contacto en cada página.</p> "+
-                        "<p>Proyecto realizado en <a href=\"http://welovewebs.com\"> WeLoveWebs </a></p>",
+                        "<p>Proyecto realizado en <a target=\"_blank\" href=\"http://welovewebs.com\"> WeLoveWebs </a></p>",
 
-                       
-                      
+
+
         categories: [
             categories.ALL,
             categories.WEB
-         
+
         ]
     },
 
@@ -343,8 +343,8 @@ var projects = {
             'img/portfolio-mariona-mercadal-web-roques.png',
             'img/portfolio-mariona-mercadal-web-roques3.png',
             'img/portfolio-mariona-mercadal-web-roques4.png'
-           
-            
+
+
         ],
         description: "<p>Empresa de geotécnica y construcción. He realizado un rediseño de su logotipo, "+
                         "manteniendo sus colores corporativos, pero dándole un aire más moderno en el cual "+
@@ -356,12 +356,12 @@ var projects = {
 
 
 
-                      
+
         categories: [
             categories.ALL,
             categories.GRAPHIC,
             categories.WEB
-         
+
         ]
     },
 

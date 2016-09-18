@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Mariona Mercadal | Algo más que una diseñadora web</title>
+	<title>Mariona Mercadal diseñadora web y gráfica - Portfolio</title>
 	<meta charset="utf-8">
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 	<meta name="keywords" content="Portfolio, Mariona Mercadal, branding, packaging, editorial, ilustración, web">
@@ -11,8 +11,19 @@
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon-mariona.png">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/mediaqueries.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
 	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+      ga('create', 'UA-4095748-21', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 </head>
 
 <body>
@@ -79,7 +90,7 @@
 
 			Si os habéis quedado con ganas de más podéis descargaros mi CV a continuación o poneros en contacto conmigo y nos comemos unos pasteles junt@s!
             <br />
-			<button>Descarga mi CV</button>
+			<a target="_blank" class="download-button" href="cv-Mariona-Mercadal-Montoya.pdf">Descarga mi CV</a>
             </p>
 		</div>
 
@@ -228,7 +239,7 @@
                             </div>
                         </article>
                     </li>
-         
+
                     <li data-id="7">
                         <article>
                             <img src="img/portfolio-mariona-mercadal-proyecto-guia-bcn.png"/>
@@ -331,7 +342,7 @@
                     </li>
 				</ul>
 
-                <div class="project-detail">
+                <div id="project-detail-box" class="project-detail">
                     <div class="main"></div>
                     <div class="project-content">
                         <a class="close" href=""><img src="img/cerrar-detalle-proyecto.png" alt="Cerrar detalle proyecto" /></a>
@@ -363,13 +374,13 @@
 	<section class="contact" id="contact">
 		<div class="wrapper">
 			<h1>Dime algo y<br> comenzemos la aventura</h1>
-				<form>
-            	<input type="text" name="firstname" placeholder="Tu nombre" />
-          		 </br>
-           		<input type="text" name="lastname" placeholder="Tu email" required />
-           		</br>
-           		<textarea name="message" rows="10" cols="30" placeholder="Escribe aquí tu aventura :)"></textarea>
-          		 <button type="submit" value="Enviar">Enviar</button>
+				<form method="post" id="contact_form" action="http://www.welvisolutions.com/send_mail">
+                    <input required type="text" name="name" placeholder="Tu nombre" />
+                     </br>
+                    <input required type="email" name="email" placeholder="Tu email" required />
+                    </br>
+                    <textarea required name="subject" rows="10" cols="30" placeholder="Escribe aquí tu aventura :)"></textarea>
+                     <button type="submit" value="Enviar">Enviar</button>
            		</form>
 		</div>
 
@@ -386,10 +397,9 @@
 		<div class="final">
 
 			<div class="social">
-                <a href=""><img src="img/portfolio-mariona-mercadal-icono-linkedin.svg" alt="Linkedin" /></a>
-                <a href=""><img src="img/portfolio-mariona-mercadal-icono-facebook.svg" alt="Facebook" /></a>
-                <a href=""><img src="img/portfolio-mariona-mercadal-icono-instagram.svg" alt="Instagram" /></a>
-                <a href=""><img src="img/portfolio-mariona-mercadal-icono-behance.svg" alt="Behance" /></a>
+                <a target="_blank" href="http://www.linkedin.com/in/marionamercadal"><img src="img/portfolio-mariona-mercadal-icono-linkedin.svg" alt="Linkedin" /></a>
+                <a target="_blank" href="http://www.domestika.org/es/mariona-1"><img src="img/portfolio-mariona-mercadal-icono-domestika.svg" alt="Domestika" /></a>
+                <a target="_blank" href="https://www.behance.net/marionadisacac"><img src="img/portfolio-mariona-mercadal-icono-behance.svg" alt="Behance" /></a>
             </div>
 			<img class="xopi" src="img/portfolio-mariona-mercadal-xopi.png"/>
 			<img class="sentada" src="img/portfolio-mariona-mercadal-avatar-sentada.png"/>
@@ -401,6 +411,8 @@
 	<script type="text/javascript" src="js/jquery.min.1.12.3.js"></script>
     <script type="text/javascript" src="js/jquery.mobile.custom.min.js"></script>
     <script type="text/javascript" src="js/underscore.js"></script>
+    <script type="text/javascript" src="js/jquery.form.min.js"></script>
+    <script type="text/javascript" src="js/animate.js"></script>
     <script type="text/javascript" src="js/projects.js"></script>
     <script type="text/javascript" src="js/functions.js"></script>
 

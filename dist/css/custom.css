@@ -42,3 +42,23 @@
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
 }
+
+/* Descubreme move */
+@-webkit-keyframes descubremeMove {
+  0% {-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}
+  50% {-webkit-transform: translate3d(0, 30%, 0);transform: translate3d(0, 60%, 0);}
+  100% {-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}
+}
+
+@keyframes descubremeMove {
+  0% {-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}
+  50% {-webkit-transform: translate3d(0, 30%, 0);transform: translate3d(0, 60%, 0);}
+  100% {-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}
+}
+
+.descubremeMove {
+  -webkit-animation-name: descubremeMove;
+  animation-name: descubremeMove;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
