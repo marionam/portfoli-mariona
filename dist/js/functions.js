@@ -303,7 +303,16 @@ function initMainMenu() {
 function initMenuClickEvent() {
     $('.main-menu ul li a, .text-intro a').click(function(e) {
         var link = (this);
+        var option = String($(this).attr("href")).replace("#","");
         e.preventDefault();
+        try {
+            ga('send', {
+                hitType: 'event',
+                eventCategory: 'Menu',
+                eventAction: 'click',
+                eventLabel: option
+            });
+        } catch(e) {}
         goToSection(link);
     });
 }
