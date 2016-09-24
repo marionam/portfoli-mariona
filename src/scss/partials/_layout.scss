@@ -86,6 +86,12 @@ nav.main-menu {
 	right: 30px;
 	z-index: 3;
 
+    .menu-button {
+        img {
+            display: none;
+        }
+    }
+
 	ul {
 		display: none;
 		max-width: 152px;
@@ -160,12 +166,15 @@ nav.main-menu {
 		border: none;
 		background-color: transparent;
 		color: $yellow-color;
-
 	}
 
 	.about-me-button {
 		border-radius: 100px;
-		background-color: $red-color;
+        &,
+        img {
+    		background-color: $red-color;
+            box-shadow: 0 0 6px 1px #b19c47;
+        }
 		color: $yellow-color;
 		box-shadow: 0 0 6px 1px #b19c47;
 
@@ -173,7 +182,11 @@ nav.main-menu {
 
 	.services-button {
 		border-radius: 100px;
-		background-color: $dark-pink-color;
+        &,
+        img {
+    		background-color: $dark-pink-color;
+            box-shadow: 0 0 6px 1px #d26169;
+        }
 		color: $pink-color;
 		box-shadow: 0 0 6px 1px #d26169;
 
@@ -181,7 +194,11 @@ nav.main-menu {
 
 	.projects-button {
 		border-radius: 100px;
-		background-color: $pink-color;
+        &,
+        img {
+    		background-color: $pink-color;
+            box-shadow: 0 0 6px 1px #498a8b;
+        }
 		color: $dark-blue-color;
 		box-shadow: 0 0 6px 1px #498a8b;
 
@@ -189,10 +206,13 @@ nav.main-menu {
 
 	.contact-button {
 		border-radius: 100px;
-		background-color: $yellow-color;
+        &,
+        img {
+    		background-color: $yellow-color;
+            box-shadow: 0 0 6px 1px #7aa5a5;
+        }
 		color: $dark-blue-color;
 		box-shadow: 0 0 6px 1px #7aa5a5;
-
 	}
 
 

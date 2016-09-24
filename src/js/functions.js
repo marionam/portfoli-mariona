@@ -1,4 +1,5 @@
 var _lastCompleted = true;
+var _toggleMenuDone = true;
 var defaultButtonClass;
 var defaultProjectsSectionHeight;
 var currentImage = 1;
@@ -283,12 +284,29 @@ function initContactForm() {
 
 function toggleMenu($this) {
     var $ul = $this.parent().find("ul");
+    console.log("toggle menu");
     if( $ul.css("display") == "block" ) {
         $(".intro-wrapper").addClass("closed");
+        $(".main-menu .menu-button img").attr("src","img/burger-menu.png");
+        if( _toggleMenuDone ) {
+            _toggleMenuDone = false;
+            $ul.animate({right: "-250%"}, 300, function(){
+                $(this).css("display","none");
+                _toggleMenuDone = true;
+            });
+        }
     } else {
         $(".intro-wrapper").removeClass("closed");
+        $(".main-menu .menu-button img").attr("src","img/cross.png");
+        if( _toggleMenuDone ) {
+            _toggleMenuDone = false;
+            $ul.css("display","block");
+            $ul.animate({right: "0"}, 300, function(){
+                _toggleMenuDone = true;
+            });
+        }
     }
-    $ul.toggle();
+//    $ul.toggle();
 }
 
 function initMainMenu() {

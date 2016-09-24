@@ -78,6 +78,8 @@ nav.main-menu {
   top: 30px;
   right: 30px;
   z-index: 3; }
+  nav.main-menu .menu-button img {
+    display: none; }
   nav.main-menu ul {
     display: none;
     max-width: 152px;
@@ -133,24 +135,36 @@ nav.main-menu {
     color: #fceca9; }
   nav.main-menu .about-me-button {
     border-radius: 100px;
-    background-color: #c13948;
     color: #fceca9;
     box-shadow: 0 0 6px 1px #b19c47; }
+    nav.main-menu .about-me-button,
+    nav.main-menu .about-me-button img {
+      background-color: #c13948;
+      box-shadow: 0 0 6px 1px #b19c47; }
   nav.main-menu .services-button {
     border-radius: 100px;
-    background-color: #ea5c67;
     color: #f9d1c9;
     box-shadow: 0 0 6px 1px #d26169; }
+    nav.main-menu .services-button,
+    nav.main-menu .services-button img {
+      background-color: #ea5c67;
+      box-shadow: 0 0 6px 1px #d26169; }
   nav.main-menu .projects-button {
     border-radius: 100px;
-    background-color: #f9d1c9;
     color: #6fbcbe;
     box-shadow: 0 0 6px 1px #498a8b; }
+    nav.main-menu .projects-button,
+    nav.main-menu .projects-button img {
+      background-color: #f9d1c9;
+      box-shadow: 0 0 6px 1px #498a8b; }
   nav.main-menu .contact-button {
     border-radius: 100px;
-    background-color: #fceca9;
     color: #6fbcbe;
     box-shadow: 0 0 6px 1px #7aa5a5; }
+    nav.main-menu .contact-button,
+    nav.main-menu .contact-button img {
+      background-color: #fceca9;
+      box-shadow: 0 0 6px 1px #7aa5a5; }
 
 /****PORTADA****/
 .avatar {

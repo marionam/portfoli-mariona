@@ -450,9 +450,68 @@
         width: auto;
     }
 
+    .intro-wrapper:not(.closed) {
+        nav.main-menu {
+            button {
+                img {
+                    background-color: transparent;
+                    box-shadow: initial;
+                }
+            }
+        }
+    }
+
     nav.main-menu {
-        top: 20px;
-        right: 10px;
+        top: 0;
+        right: 0;
+        .menu-button {
+            padding-right: 11px;
+            padding-top: 10px;
+            position: relative;
+            z-index: 100;
+            img {
+                display: block;
+                width: 48px;
+                height: 48px;
+                border-radius: 4px;
+            }
+            span {
+                display: none;
+            }
+            background-color: transparent !important;
+            box-shadow: initial;
+            border-radius: 0;
+        }
+        .projects-button {
+            img {
+                background-color: #6fbcbe;
+            }
+        }
+        .contact-button {
+            img {
+                background-color: #6fbcbe;
+            }
+        }
+        ul {
+            height: 100vh;
+            background-color: rgba(25, 21, 22, 0.95);
+            border-radius: initial;
+            position: absolute;
+            right: -250%;
+            top: 0;
+            margin-top: 0;
+            padding-top: 90px;
+            padding-right: 20px;
+            width: 155%;
+            li {
+                text-align: right;
+                a {
+                    display: inline;
+                    border: none;
+                    padding: 0;
+                }
+            }
+        }
     }
 
 	.wrapper {
@@ -608,6 +667,10 @@
         .cow {
     	    width: 67%;
 			bottom: 7%;
+        }
+
+        a.download-button {
+            max-width: 220px;
         }
 
     }
